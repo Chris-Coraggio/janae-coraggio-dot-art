@@ -1,17 +1,15 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Illustrator and Children's Author
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>ATR-BC #22-487</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -22,13 +20,12 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Janae is a children's book illustrator, author, and Board Certified Art Therapist with 10+ collaborative projects, self-published and traditionally published. She holds a Masters of Arts degree in Marriage and Family Therapy (MFT) and Art Therapy (AT) from Dominican University of California. She believes that art-making and the creative process can be powerful tools in helping people process emotions and difficult life circumstances. Her master's thesis is The Therapeutic Benefits of Children's Literature: Responding Through Making Art and Writing Stories.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+She currently works as an art therapist at a memory care facility, helping people with Alzheimer's and dementia find creative self-expression. She volunteers with the Kids & Art Foundation, a nonprofit in the Bay Area bringing the arts to children fighting cancer and chronic illness. In her free time, she finds the best coffee shops in San Francisco, stays active in her church community, and loves to walk her Samoyed/Husky, Coda, with her husband, Chris.
