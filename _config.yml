@@ -7,7 +7,7 @@ first_name: Janae
 middle_name: D.
 last_name: Coraggio, MA, ATR-BC
 contact_note: >
-  Reach out if you'd like to get in touch with Janae about art therapy, her books, and/or illustrations.
+  Add your email below to be a part of my newsletter!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Illustrator and Children's Author
 footer_text: >
@@ -49,6 +49,7 @@ footer_fixed: true
 search_enabled: true
 socials_in_search: true
 posts_in_search: false
+projects_in_search: false
 bib_search: true
 
 # Dimensions
@@ -119,7 +120,7 @@ giscus:
 
 newsletter:
   enabled: true
-  endpoint: # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
+  endpoint: cmh75qfit0tmg1i0ib0c66e04 # your loops endpoint (e.g., https://app.loops.so/api/newsletter-form/YOUR-ENDPOINT)
   # https://loops.so/docs/forms/custom-form
 
 # -----------------------------------------------------------------------------
