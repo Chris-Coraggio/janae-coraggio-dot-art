@@ -26,9 +26,6 @@ ninja.data = [{
         },{id: "news-moving-to-a-new-website",
           title: 'Moving to a new website!',
           description: "",
-          section: "News",},{id: "news-testing-out-my-cms",
-          title: 'Testing out my CMS',
-          description: "",
           section: "News",},{
         id: 'social-email',
         title: 'email',
