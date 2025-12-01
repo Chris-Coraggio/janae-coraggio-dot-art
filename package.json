@@ -1,4 +1,6 @@
 {
+  "name": "janae-coraggio-dot-art",
+  "version": "1.0.0",
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "1.4.0",
     "prettier": "3.1.1"

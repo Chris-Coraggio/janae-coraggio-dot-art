@@ -69,18 +69,30 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Profile Image", name: "profile.image", widget: "image", required: false }
-          - { label: "Profile Align", name: "profile.align", widget: "select", options: ["left", "right"], default: "right" }
-          - { label: "Profile Circular", name: "profile.image_circular", widget: "boolean", default: false }
-          - { label: "Profile Info", name: "profile.more_info", widget: "text", required: false }
+          - label: "Profile"
+            name: "profile"
+            widget: "object"
+            fields:
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Align", name: "align", widget: "select", options: ["left", "right"], default: "right" }
+              - { label: "Image Circular", name: "image_circular", widget: "boolean", default: false }
+              - { label: "More Info", name: "more_info", widget: "text", required: false }
           - { label: "Selected Papers", name: "selected_papers", widget: "boolean", default: true }
           - { label: "Social Links", name: "social", widget: "boolean", default: true }
-          - { label: "Announcements Enabled", name: "announcements.enabled", widget: "boolean", default: true }
-          - { label: "Announcements Scrollable", name: "announcements.scrollable", widget: "boolean", default: true }
-          - { label: "Announcements Limit", name: "announcements.limit", widget: "number", value_type: "int", default: 5 }
-          - { label: "Latest Posts Enabled", name: "latest_posts.enabled", widget: "boolean", default: false }
-          - { label: "Latest Posts Scrollable", name: "latest_posts.scrollable", widget: "boolean", default: true }
-          - { label: "Latest Posts Limit", name: "latest_posts.limit", widget: "number", value_type: "int", default: 3 }
+          - label: "Announcements"
+            name: "announcements"
+            widget: "object"
+            fields:
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+              - { label: "Scrollable", name: "scrollable", widget: "boolean", default: true }
+              - { label: "Limit", name: "limit", widget: "number", value_type: "int", default: 5 }
+          - label: "Latest Posts"
+            name: "latest_posts"
+            widget: "object"
+            fields:
+              - { label: "Enabled", name: "enabled", widget: "boolean", default: false }
+              - { label: "Scrollable", name: "scrollable", widget: "boolean", default: true }
+              - { label: "Limit", name: "limit", widget: "number", value_type: "int", default: 3 }
           - { label: "Content", name: "body", widget: "markdown" }
 
       - label: "Contact Page"
