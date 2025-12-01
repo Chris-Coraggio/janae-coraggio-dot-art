@@ -8,6 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
+  logo: logo.jpeg
   more_info: >
     <p>ATR-BC #22-487</p>
 

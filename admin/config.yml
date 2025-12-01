@@ -76,6 +76,7 @@ collections:
               - { label: "Image", name: "image", widget: "image", required: false }
               - { label: "Align", name: "align", widget: "select", options: ["left", "right"], default: "right" }
               - { label: "Image Circular", name: "image_circular", widget: "boolean", default: false }
+              - { label: "Logo", name: "logo", widget: "image", required: false }
               - { label: "More Info", name: "more_info", widget: "text", required: false }
           - { label: "Selected Papers", name: "selected_papers", widget: "boolean", default: true }
           - { label: "Social Links", name: "social", widget: "boolean", default: true }
