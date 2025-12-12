@@ -267,6 +267,34 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// Dropdown header-only styling (non-clickable heading)
+.navbar .nav-item.dropdown-hover {
+  position: relative;
+
+  .dropdown-header-only {
+    cursor: default;
+    pointer-events: none;
+    color: var(--global-text-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-text-color);
+      text-decoration: none;
+    }
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+  }
+
+  &:hover .dropdown-menu {
+    display: block;
+  }
+}
+
 .dropdown-item {
   color: var(--global-text-color);
 

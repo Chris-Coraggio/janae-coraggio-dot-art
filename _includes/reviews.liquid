@@ -1,0 +1,42 @@
+<div class="review-item mb-4 pb-4 border-bottom">
+  <div class="review-header mb-2">
+    <div class="reviewer-info d-flex align-items-center mb-2">
+      <strong class="reviewer-name mr-2">{{ review.reviewer_name }}</strong>
+      {% if review.verified_purchase %}
+        <span class="badge badge-success mr-2">Verified Purchase</span>
+      {% endif %}
+      {% if review.rating %}
+        <div class="rating mr-2">
+          {% assign rating = review.rating | plus: 0 %}
+          {% for i in (1..5) %}
+            {% if i <= rating %}
+              <i class="fa-solid fa-star text-warning"></i>
+            {% else %}
+              <i class="fa-regular fa-star text-muted"></i>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+    {% if review.review_title %}
+      <h4 class="review-title mb-1">{{ review.review_title }}</h4>
+    {% endif %}
+    {% if review.book_title %}
+      <p class="text-muted mb-2"><em>Review for: {{ review.book_title }}</em></p>
+    {% endif %}
+    {% if review.date %}
+      <small class="text-muted">{{ review.date | date: "%B %d, %Y" }}</small>
+    {% endif %}
+  </div>
+  <div class="review-content">
+    {{ review.content | markdownify }}
+  </div>
+  {% if review.helpful_count %}
+    <div class="review-helpful mt-2">
+      <small class="text-muted">
+        <i class="fa-regular fa-thumbs-up"></i> {{ review.helpful_count }} people found this helpful
+      </small>
+    </div>
+  {% endif %}
+</div>
+
