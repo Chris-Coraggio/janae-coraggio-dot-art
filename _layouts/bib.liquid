@@ -184,6 +184,9 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {% if entry.available %}
+      <h6>Available at: {{ entry.available }}</h6>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">

@@ -3,9 +3,17 @@ layout: page
 title: Workshops
 permalink: /workshops/
 nav: true
-nav_order: 5
+nav_order: 3
 horizontal: false
 ---
+
+<div style="text-align:center;">
+  <img src="/assets/img/book_to_brush.jpg"
+       alt="Book to Brush logo"
+       width="300"
+       height="300"
+       style="margin:1rem;">
+</div>
 
 ### Book to Brush: Storybook-Inspired Artmaking with Janae
 

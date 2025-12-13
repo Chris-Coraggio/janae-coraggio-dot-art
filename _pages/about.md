@@ -1,17 +1,17 @@
 ---
 layout: about
 title: About
-permalink: /
+nav: true
+nav_order: 5
 subtitle: Illustrator and Children's Author
+permalink: /about
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  logo: logo.jpeg
   more_info: >
     <p>ATR-BC #22-487</p>
-    <p>Illustrator and Children's Author</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page

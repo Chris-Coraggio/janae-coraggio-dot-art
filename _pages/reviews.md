@@ -4,7 +4,7 @@ title: Reviews
 permalink: /reviews/
 description: Customer reviews from Amazon
 nav: true
-nav_order: 4
+nav_order: 7
 ---
 
 <!-- _pages/reviews.md -->
@@ -15,4 +15,3 @@ nav_order: 4
     {% include reviews.liquid %}
   {% endfor %}
 </div>
-
