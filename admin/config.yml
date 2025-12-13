@@ -38,6 +38,24 @@ collections:
       - { label: "Content", name: "body", widget: "markdown" }
 
   # =============================================================================
+  # Reviews Collection
+  # =============================================================================
+  - name: "reviews"
+    label: "Reviews"
+    folder: "_reviews"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Reviewer Name", name: "reviewer_name", widget: "string" }
+      - { label: "Review Title", name: "review_title", widget: "string", required: false }
+      - { label: "Book Title", name: "book_title", widget: "string", required: false }
+      - { label: "Rating", name: "rating", widget: "number", value_type: "int", min: 1, max: 5, required: false }
+      - { label: "Date", name: "date", widget: "datetime", default: "", format: "YYYY-MM-DD" }
+      - { label: "Verified Purchase", name: "verified_purchase", widget: "boolean", default: false, required: false }
+      - { label: "Helpful Count", name: "helpful_count", widget: "number", value_type: "int", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  # =============================================================================
   # Blog Posts Collection
   # =============================================================================
   - name: "posts"
@@ -76,6 +94,7 @@ collections:
               - { label: "Image", name: "image", widget: "image", required: false }
               - { label: "Align", name: "align", widget: "select", options: ["left", "right"], default: "right" }
               - { label: "Image Circular", name: "image_circular", widget: "boolean", default: false }
+              - { label: "Logo", name: "logo", widget: "image", required: false }
               - { label: "More Info", name: "more_info", widget: "text", required: false }
           - { label: "Selected Papers", name: "selected_papers", widget: "boolean", default: true }
           - { label: "Social Links", name: "social", widget: "boolean", default: true }

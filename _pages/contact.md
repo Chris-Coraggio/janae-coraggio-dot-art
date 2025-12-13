@@ -2,9 +2,9 @@
 layout: page
 title: Contact
 permalink: /contact/
-description: Reach out below if you'd like to get in touch with Janae about art therapy, her books, and/or illustrations.
+description: I’d love to connect with you! Please reach out below if you’re interested in my workshops, illustrations, or written work - or if you'd just like a friendly chat. I’m currently accepting commissions.
 nav: true
-nav_order: 4
+nav_order: 8
 ---
 
 <form action="https://formspree.io/f/mdoqwkbv" method="POST" class="contact-form">

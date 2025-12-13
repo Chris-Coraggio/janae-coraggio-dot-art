@@ -2,8 +2,8 @@
 layout: default
 permalink: /blog/
 title: Blog
-nav: false
-nav_order: 1
+nav: true
+nav_order: 6
 pagination:
   enabled: true
   collection: posts
@@ -54,6 +54,8 @@ pagination:
       {% endfor %}
     </ul>
   </div>
+  {% else %}
+    <h2>Coming soon!</h2>
   {% endif %}
 
 {% assign featured_posts = site.posts | where: "featured", "true" %}
