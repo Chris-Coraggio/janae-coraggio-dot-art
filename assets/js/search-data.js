@@ -3,22 +3,71 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "About",
+    id: "nav-home",
+    title: "Home",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
-          title: "Publications",
+  },{id: "dropdown-illustrations",
+              title: "Illustrations",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/illustrations/";
+              },
+            },{id: "dropdown-publications",
+              title: "Publications",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/publications/";
+              },
+            },{id: "dropdown-tutorials",
+              title: "Tutorials",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/tutorials/";
+              },
+            },{id: "dropdown-murals",
+              title: "Murals",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/murals/";
+              },
+            },{id: "nav-workshops",
+          title: "Workshops",
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/publications/";
+            window.location.href = "/workshops/";
+          },
+        },{id: "nav-about",
+          title: "About",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/about";
+          },
+        },{id: "nav-blog",
+          title: "Blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-reviews",
+          title: "Reviews",
+          description: "Customer reviews from Amazon",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/reviews/";
           },
         },{id: "nav-contact",
           title: "Contact",
-          description: "Reach out below if you&#39;d like to get in touch with Janae about art therapy, her books, and/or illustrations.",
+          description: "I’d love to connect with you! Please reach out below if you’re interested in my workshops, illustrations, or written work - or if you&#39;d just like a friendly chat. I’m currently accepting commissions.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/contact/";
@@ -26,7 +75,15 @@ ninja.data = [{
         },{id: "news-moving-to-a-new-website",
           title: 'Moving to a new website!',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "news-launching-therapeutic-art-groups-in-senior-centers",
+          title: 'Launching therapeutic art groups in senior centers',
+          description: "",
+          section: "News",},{id: "reviews-example-review",
+          title: 'Example Review',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/example-review/";
+            },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
