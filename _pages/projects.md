@@ -2,7 +2,6 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Coming soon!
 nav: false
 nav_order: 3
 display_categories: [work, fun]
