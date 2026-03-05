@@ -10,8 +10,8 @@ horizontal: false
 <div style="display:flex; align-items:center; gap:1rem; margin:1rem 0;">
   <img src="/assets/img/book_to_brush.jpg"
        alt="Book to Brush logo"
-       width="100"
-       height="100">
+       width="200"
+       height="200">
   <h3 style="margin:0;">Book to Brush: Storybook-Inspired Artmaking with Janae</h3>
 </div>
 

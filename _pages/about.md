@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Ciao! I’m a children’s book illustrator, author, and Board Certified Art Therapist with over 10 collaborative projects, self-published and traditionally published. My most notable book is _Coloring God’s Love for Me: 100 Devotions to Inspire Young Hearts_ published with Tommy Nelson, a Christian Imprint to HarperCollins, in 2022. I hold a masters degree in Marriage and Family Therapy (MFT) and Art Therapy (AT) from Dominican University of California.
+Ciao! I’m a children’s book illustrator, author, and <a href="https://atcb.org/what-is-art-therapy/">Board Certified Art Therapist</a> with over 10 collaborative projects, self-published and traditionally published. My most notable book is _Coloring God’s Love for Me: 100 Devotions to Inspire Young Hearts_ published with Tommy Nelson, a Christian Imprint to HarperCollins, in 2022. I hold a masters degree in Marriage and Family Therapy (MFT) and Art Therapy (AT) from Dominican University of California.
 
 I believe that art-making and the creative process can be powerful tools in helping people express themselves while getting in touch with their own values. One fun fact about me is that I’ve always loved children’s books! Even after growing up, these classic picture books continue to produce a sense of nostalgia and deep reflection. My master’s thesis is _The Therapeutic Benefits of Children’s Literature: Responding Through Making Art and Writing Stories_. I explored the social-emotional value of these books in an elementary classroom. I have a diverse background in clinical and creative settings, spanning pediatrics at Lucile Packard Children’s Hospital and assisted living and memory care at AlmaVia of San Francisco.
 

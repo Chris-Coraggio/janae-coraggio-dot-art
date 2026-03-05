@@ -2,7 +2,7 @@
 layout: post
 title: "After the Fall"
 date: 2025-02-03 10:00:00
-description: 'A perfect read for leading an art discussion on fears, confidence, and bravery'
+description: "A perfect read for leading an art discussion on fears, confidence, and bravery"
 tags:
   - books
 thumbnail: /assets/img/afterthefall.jpg
@@ -11,11 +11,17 @@ featured: false
 
 ### Book
 
-The book featured in my art groups with seniors this week was “After the Fall: How Humpty Dumpty Got Back Up Again” by Dan Santat. It is a perfect read for leading an art discussion on fears, confidence, and bravery. 
+The book featured in my art groups with seniors this week was “After the Fall: How Humpty Dumpty Got Back Up Again” by Dan Santat. It is a perfect read for leading an art discussion on fears, confidence, and bravery.
 
 ### Response Art
 
-The art process includes drawing or coloring in a brick wall that represents a fear or a personal problem while thinking about the walls’ height in relation to your experience of the problem. For my older adults, I found preprinted coloring pages of brick walls and cutting a 8.5x 11 standard size paper in half as the most-less intimidating approach. Then, I folded the paper into a paper plane to represent our ability to reach past fears or problems. If you want, add personal self-affirmations onto the paper plane. 
+The art process includes drawing or coloring in a brick wall that represents a fear or a personal problem while thinking about the walls’ height in relation to your experience of the problem. For my older adults, I found preprinting coloring pages of brick walls to color on was the best approach. Then, I folded the paper into a paper plane to represent our ability to reach past fears or problems. If you want, add personal self-affirmations onto the paper plane. Throwing the paper plane after discussing these barriers becomes a cathartic way for releasing the frustrations. And it’s fun to race the paper planes!
+
+### Process Questions
+
+1. How did it feel when you made your brick wall into a paper airplane?
+2. What does the process show you about letting go and releasing fears, or reaching past your problems?
+3. Any encouraging words to tell ‘your wall’?
 
 ### Therapeutic Benefits
 
