@@ -8,8 +8,6 @@ nav_order: 2
 dropdown: true
 dropdown_header_only: true
 children:
-  - title: Illustrations
-    permalink: /illustrations/
   - title: Publications
     permalink: /publications/
   - title: Tutorials
