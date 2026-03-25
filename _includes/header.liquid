@@ -57,7 +57,6 @@
                         <span class="sr-only">(current)</span>
                       {% endif %}
                     </span>
-                    <div class="dropdown-menu dropdown-menu-right">
                   {% else %}
                     <a
                       class="nav-link dropdown-toggle"
@@ -73,8 +72,13 @@
                         <span class="sr-only">(current)</span>
                       {% endif %}
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                   {% endif %}
+                  <div
+                    class="dropdown-menu dropdown-menu-right"
+                    {% unless p.dropdown_header_only %}
+                      aria-labelledby="navbarDropdown"
+                    {% endunless %}
+                  >
                     {% for child in p.children %}
                       {% if child.title == 'divider' %}
                         <div class="dropdown-divider"></div>

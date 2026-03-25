@@ -10,4 +10,3 @@ helpful_count: 0
 ---
 
 Purchased 4 copies for family members and everyone loves it!
-

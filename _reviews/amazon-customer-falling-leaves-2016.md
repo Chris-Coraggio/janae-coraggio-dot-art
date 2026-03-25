@@ -10,4 +10,3 @@ helpful_count: 0
 ---
 
 Ordered this book to read to my nephews & I loved it!!! Adorable children's book & even a good little read for adults!
-

@@ -10,4 +10,3 @@ helpful_count: 0
 ---
 
 my daughter has really been interested Om God. She loves this coloring book.
-

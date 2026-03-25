@@ -13,4 +13,3 @@ As a first grade teacher, I especially love this book because it is character bu
 
 Sincerely,
 Mrs. P.
-

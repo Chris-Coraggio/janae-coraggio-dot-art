@@ -10,4 +10,3 @@ helpful_count: 0
 ---
 
 Such a sweet book! While the pictures and storyline are simple enough for young children to enjoy, the concepts are for all ages. A happy field is devastated to be "broken" and plowed, but it yields greater beauty and purpose. Thank you, Bethany and Janae!!
-

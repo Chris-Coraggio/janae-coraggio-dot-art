@@ -22,10 +22,12 @@
       <h4 class="review-title mb-1">{{ review.review_title }}</h4>
     {% endif %}
     {% if review.book_title %}
-      <p class="text-muted mb-2"><em>Review for: {{ review.book_title }}</em></p>
+      <p class="text-muted mb-2">
+        <em>Review for: {{ review.book_title }}</em>
+      </p>
     {% endif %}
     {% if review.date %}
-      <small class="text-muted">{{ review.date | date: "%B %d, %Y" }}</small>
+      <small class="text-muted">{{ review.date | date: '%B %d, %Y' }}</small>
     {% endif %}
   </div>
   <div class="review-content">
@@ -33,10 +35,7 @@
   </div>
   {% if review.helpful_count %}
     <div class="review-helpful mt-2">
-      <small class="text-muted">
-        <i class="fa-regular fa-thumbs-up"></i> {{ review.helpful_count }} people found this helpful
-      </small>
+      <small class="text-muted"> <i class="fa-regular fa-thumbs-up"></i> {{ review.helpful_count }} people found this helpful </small>
     </div>
   {% endif %}
 </div>
-
