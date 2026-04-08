@@ -60,7 +60,7 @@ ninja.data = [{
           },
         },{id: "nav-contact",
           title: "Contact",
-          description: "I’d love to connect with you! Please reach out below if you’re interested in my workshops, illustrations, or written work - or if you&#39;d just like a friendly chat. I’m currently accepting commissions.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/contact/";
