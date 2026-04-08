@@ -2,10 +2,11 @@
 layout: page
 title: Contact
 permalink: /contact/
-description: I’d love to connect with you! Please reach out below if you’re interested in my workshops, illustrations, or written work - or if you'd just like a friendly chat. I’m currently accepting commissions.
 nav: true
 nav_order: 8
 ---
+
+I’d love to connect with you! Please reach out below if you’re interested in my therapeutic art workshops, illustrations, murals, or written work. I’m currently accepting commissions.
 
 <form action="https://formspree.io/f/mdoqwkbv" method="POST" class="contact-form">
   <div class="form-group">
@@ -36,12 +37,12 @@ nav_order: 8
 You can also reach out through:
 
 - **Email:** [janaecoraggio@gmail.com](mailto:janaecoraggio@gmail.com)
-- **Instagram:** [@janaearttherapy](https://instagram.com/janaedueck.coraggio)
+- **Instagram:** [@janaedueck.coraggio](https://instagram.com/janaedueck.coraggio)
 - **LinkedIn:** [Profile](https://linkedin.com/in/janaedueck)
 
 ### Publishing Consultant Services
 
-I began (and often continue) my writing and illustrating career self-publishing. There’s something exciting about getting your own words or artwork out into the world without any pushback or need for convincing. I believe every story has a place somewhere, whether that is on your coffee table, on a bookshelf, or online. Getting a piece of work published for the first time is no small feat, and requires lots of grace and patience. That is why I’m here to help! With over 10 self-published and traditionally published books, I can guide you in the process. Here are some of the services I provide: Self-publishing platform(s) consultation, Editing, In-Design book formatting, illustrations (fees will vary based on project)
+I began (and often continue) my writing and illustrating career self-publishing. There’s something exciting about getting your own words or artwork out into the world without any pushback or need for convincing. I believe every story has a place somewhere, whether that is on your coffee table, on a bookshelf, or online. Getting a piece of work published for the first time is no small feat, and requires lots of grace and patience. That is why I’m here to help! With over 10 self-published and traditionally published books, I can guide you in the process. I provide self-publishing platform(s) consultation, editing, and InDesign book formatting.
 
 If already published, hello! I’d still love it partner with you. Please reach out!
 
