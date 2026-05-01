@@ -198,7 +198,7 @@ _styles: |
     <div class="flex-grow-1">
       <div class="book-service-card-heading">
         <h2 class="book-service-card-title">Full Illustrated Book</h2>
-        <span class="book-service-price">$3–5k</span>
+        <span class="book-service-price">$4–6k</span>
       </div>
       <ul>
         <li>Payments are made in 3 parts (33% deposit at contract, 33% upon approval of draft, 33% upon delivery)</li>
