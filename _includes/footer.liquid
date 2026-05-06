@@ -6,6 +6,9 @@
   {% if site.impressum_path %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
   {% endif %}
+  {% if site.newsletter.enabled %}
+    <a href="{{ '/about#newsletter-signup' | relative_url }}">Subscribe to my newsletter!</a>.
+  {% endif %}
   {% if site.last_updated %}
     Last updated: {{ 'now' | date: '%B %d, %Y' }}.
   {% endif %}

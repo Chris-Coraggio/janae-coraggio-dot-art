@@ -107,7 +107,9 @@ layout: default
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
+      <div id="newsletter-signup">
+        {% include newsletter.liquid center=true %}
+      </div>
     {% endif %}
   </article>
 </div>

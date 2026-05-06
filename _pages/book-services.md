@@ -251,3 +251,7 @@ _styles: |
     </div>
   </div>
 </div>
+
+<div class="text-center mt-4">
+  <a href="{{ '/contact' | relative_url }}" class="btn btn-outline-primary">Contact Janae</a>
+</div>

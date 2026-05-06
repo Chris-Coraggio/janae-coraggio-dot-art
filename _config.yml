@@ -11,7 +11,7 @@ last_name: Coraggio, MA, ATR-BC
 contact_note: >
   Add your email below to be a part of my newsletter!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Illustrator and Children's Author
+  Self-Taught Illustrator and Children's Author
 keywords: art-therapy
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🎨 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -86,7 +86,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Janae Coraggio # blog_name will be displayed in your blog page
-blog_description: Illustrator and Children's Author
+blog_description: Self-Taught Illustrator and Children's Author
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
