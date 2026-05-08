@@ -16,12 +16,12 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/publications/";
               },
-            },{id: "dropdown-tutorials",
-              title: "Tutorials",
+            },{id: "dropdown-videos",
+              title: "Videos",
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/tutorials/";
+                window.location.href = "/videos/";
               },
             },{id: "dropdown-murals",
               title: "Murals",
@@ -74,6 +74,9 @@ ninja.data = [{
           },
         },{id: "news-moving-to-a-new-website",
           title: 'Moving to a new website!',
+          description: "",
+          section: "News",},{id: "news-book-services-and-rates-now-available",
+          title: 'Book Services and Rates now available',
           description: "",
           section: "News",},{id: "reviews-amazon-customer-falling-leaves-2016",
           title: 'Amazon Customer Falling Leaves 2016',
