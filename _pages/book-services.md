@@ -170,6 +170,24 @@ _styles: |
 
 <div class="card book-service-card mb-4">
   <div class="card-body d-flex align-items-start flex-row">
+    <div class="book-service-icon" aria-hidden="true"><i class="ti ti-palette"></i></div>
+    <div class="flex-grow-1">
+      <div class="book-service-card-heading">
+        <h2 class="book-service-card-title">Full Illustrated Book</h2>
+        <span class="book-service-price">$4–6k</span>
+      </div>
+      <ul>
+        <li>Payments are made in 3 parts (33% deposit at contract, 33% upon approval of draft, 33% upon delivery)</li>
+        <li>Up to 2 rounds of revisions each for both draft and color versions</li>
+        <li>Up to 2 30-minute follow-up calls and a 1 hour final review call</li>
+        <li>All artwork received in digital format (PDF, JPEG, or PNG) and in 300 DPI with correct color profile (CMYK, RGB, or Both)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="card book-service-card mb-4">
+  <div class="card-body d-flex align-items-start flex-row">
     <div class="book-service-icon" aria-hidden="true"><i class="ti ti-layout"></i></div>
     <div class="flex-grow-1">
       <div class="book-service-card-heading">
@@ -187,24 +205,7 @@ _styles: |
         <li>Attention to visual flow</li>
         <li>Print-ready PDF export formatted for KDP or IngramSpark</li>
         <li>Up to 2 rounds of revisions (Extra revision rounds adds $75 each)</li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="card book-service-card mb-4">
-  <div class="card-body d-flex align-items-start flex-row">
-    <div class="book-service-icon" aria-hidden="true"><i class="ti ti-palette"></i></div>
-    <div class="flex-grow-1">
-      <div class="book-service-card-heading">
-        <h2 class="book-service-card-title">Full Illustrated Book</h2>
-        <span class="book-service-price">$4–6k</span>
-      </div>
-      <ul>
-        <li>Payments are made in 3 parts (33% deposit at contract, 33% upon approval of draft, 33% upon delivery)</li>
-        <li>Up to 2 rounds of revisions each for both draft and color versions</li>
-        <li>Up to 2 30-minute follow-up calls and a 1 hour final review call</li>
-        <li>All artwork received in digital format (PDF, JPEG, or PNG) and in 300 DPI with correct color profile (CMYK, RGB, or Both)</li>
+        <li>Additional cost of $150 for conversion to an Ebook file</li>
       </ul>
     </div>
   </div>
@@ -247,7 +248,7 @@ _styles: |
     <div class="book-service-icon" aria-hidden="true"><i class="ti ti-license"></i></div>
     <div class="flex-grow-1">
       <h2 class="book-service-card-title">Do I own the rights to the book and will I receive royalties if Janae is my illustrator?</h2>
-      <p class="mb-0">During the contract phase, we will work together to reach a mutual agreement on how royalties are shared between the author and illustrator. Please note that this is not a work-for-hire arrangement; I retain the rights to all artwork created for the book.</p>
+      <p class="mb-0">During the contract phase, we will work together to reach a mutual agreement on how royalties are shared between the author and illustrator. Please note that this is not a work-for-hire arrangement; I retain the rights to all artwork created for the book. An ISBN will be purchased by the author through Bowker to be the ‘Publisher of Record’ giving the author the rights to produce and sell the specific edition of the book on either KDP or IngramSpark. Please note, separate ISBN's will be needed for purchase if your book is in multiple versions such as paperback, ebook, and hard copy.</p>
     </div>
   </div>
 </div>
