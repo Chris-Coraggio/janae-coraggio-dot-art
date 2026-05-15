@@ -11,7 +11,7 @@ featured: false
 
 ### Book
 
-The book featured in my art groups with seniors this week was “After the Fall: How Humpty Dumpty Got Back Up Again” by Dan Santat. It is a perfect read for leading an art discussion on fears, confidence, and bravery.
+The book featured in my art groups this week was “After the Fall: How Humpty Dumpty Got Back Up Again” by Dan Santat. It is a perfect read for leading an art discussion on fears, confidence, and bravery.
 
 ### Response Art
 
