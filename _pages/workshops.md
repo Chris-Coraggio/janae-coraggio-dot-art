@@ -17,7 +17,7 @@ horizontal: false
 
 #### What's the psychology behind it?
 
-The workshop begins with a reading of a social-emotional picture book, followed by artmaking for a more integrated and holistic approach to increasing emotional regulation, self-expression, and cognitive functioning. By activating both the left and right hemispheres through reading and drawing, the process promotes mindfulness and a reintegration of these functions as both hemispheres learn to work in tandem. Reading a book and making art in response allows for three main pillars to take place in bibliotherapy which are identification (connecting with the character, story, or text), catharsis (a release of suppressed emotion) , and insight (gaining a new perspective or solution for a personal problem). Artmaking has also been proven to enhance quality of life, lower stress, build relaxation skills, assist with self-expression when aphasia is present, and boost overall self-esteem. Here's an [article](https://transformingage.org/blog/transforming-age-through-therapeutic-art/) featuring my process!
+The workshop begins with a reading of a social-emotional picture book, followed by artmaking for a more integrated and holistic approach to increasing emotional regulation, self-expression, and cognitive functioning. By activating both the left and right hemispheres through reading and drawing, the process promotes mindfulness and a reintegration of these functions as both hemispheres learn to work in tandem. Artmaking has also been proven to enhance quality of life, lower stress, build relaxation skills, assist with self-expression when aphasia is present, and boost overall self-esteem. Here's an [article](https://transformingage.org/blog/transforming-age-through-therapeutic-art/) featuring my process!
 
 #### Who is the facilitator?
 
@@ -33,9 +33,9 @@ I find social-emotional children’s books that are appropriate for educational 
 
 #### How can I use a picture book for an adult?
 
-The uncertainty of using a picture book in an adult-like setting can seem counterintuitive to the therapeutic process and even demeaning, but it is important you consider the books that have adult level content. Here’s how I like to preface my workshops before reading a picture book to adults:
+The uncertainty of using a picture book in an adult-like setting can seem demeaning, but it is important you consider the books that have adult level content. Using poetry books can also be a great supplement to picture books. Here’s how I like to preface my workshops before reading a picture book to adults:
 
-> “Picture books often communicate complex, adult themes in simple and accessible ways, helping difficult topics feel easier to express and understand. Today, I want us to try to ‘be like a kid’ and approach life with curiosity and openness. This is different than me saying ‘I want you to be a kid’ which might feel belittling. Oftentimes, giving our adult-selves permission to ‘be like a child again’ invites a sense of play and transparency that can reduce stress and even allow us to open up more. In addition, we now bring our adult experiences to these books allowing for a deeper application. So, what do you say we read this picture book with that in mind?”
+> “Picture books often explore complex, deeply human themes in ways that feel simple, approachable, and easy to understand. Today, we are reading this book not as children, but as adults carrying a lifetime of experiences. One of the strengths of picture books is their ability to speak directly to the heart without relying on complicated language. They address meaningful topics with clarity and brevity, which is why therapists, doctors, professors, and coaches often use them with adults as well. As we read today, we can allow ourselves to stay open-minded and notice how this story may resonate with us in ways a child might not yet experience”
 
 #### Disclaimer
 
