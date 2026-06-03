@@ -136,34 +136,19 @@ _styles: |
   <div class="card-body d-flex align-items-start flex-row">
     <div class="book-service-icon" aria-hidden="true"><i class="ti ti-file-description"></i></div>
     <div class="flex-grow-1">
-      <h2 class="book-service-card-title">Material review</h2>
-      <div class="row book-service-two-col">
-        <div class="col-md-6 mb-3 mb-md-0">
-          <div class="book-service-subheading-row">
-            <h3 class="book-service-subtitle">Light / Partial Manuscripts</h3>
-            <span class="book-service-price">$90</span>
-          </div>
-          <ul>
-            <li>Reading and analysis</li>
-            <li>1 page written feedback</li>
-            <li>Roadmap</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <div class="book-service-subheading-row">
-            <h3 class="book-service-subtitle">Standard / Full Manuscript</h3>
-            <span class="book-service-price">$175</span>
-          </div>
-          <p class="mb-2">Includes everything in Light, plus:</p>
-          <ul>
-            <li>Structural editing</li>
-            <li>Formatting advice</li>
-            <li>Art direction guidance</li>
-            <li>Roadmap of next steps</li>
-            <li>30-min follow-up call</li>
-          </ul>
-        </div>
+      <div class="book-service-card-heading">
+        <h2 class="book-service-card-title">Full Manuscript Review</h2>
+        <span class="book-service-price">$175</span>
       </div>
+      <ul>
+        <li>Reading and analysis</li>
+        <li>1 page written feedback</li>
+        <li>Structural editing</li>
+        <li>Formatting advice</li>
+        <li>Art direction guidance</li>
+        <li>Roadmap of next steps</li>
+        <li>1 hour follow-up call</li>
+      </ul>
     </div>
   </div>
 </div>
