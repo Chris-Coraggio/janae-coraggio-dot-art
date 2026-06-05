@@ -2,6 +2,7 @@
 layout: post
 title: "VALUEable Art-making!"
 date: 2026-05-07 10:00:00
+description: Getting in touch with your personal values and what matters most
 tags:
   - books
 thumbnail: /assets/img/letterslive.jpg

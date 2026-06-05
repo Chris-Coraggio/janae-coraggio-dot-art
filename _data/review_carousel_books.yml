@@ -1,0 +1,20 @@
+# Books shown in the publications page review carousel.
+# match_titles: review.book_title values grouped under this publication.
+- title: The Happy Field
+  match_titles:
+    - The Happy Field
+  preview: happy-field.jpg
+  format: Picture Book
+
+- title: "Coloring God's Love for Me"
+  match_titles:
+    - "Coloring God's Love for Me"
+  preview: coloring.jpg
+  format: Paperback
+
+- title: To My Falling Leaves
+  match_titles:
+    - To My Falling Leaves
+    - To My Fallings Leaves
+  preview: leaves.jpg
+  format: Picture Book

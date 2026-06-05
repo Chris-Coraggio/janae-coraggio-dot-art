@@ -1,0 +1,73 @@
+{% assign carousel_books = site.data.review_carousel_books %}
+{% if carousel_books and carousel_books.size > 0 %}
+  <section class="publication-reviews-carousel" aria-label="Reader reviews">
+    <div class="publication-reviews-carousel-track">
+      {% for book in carousel_books %}
+        {% assign review_count = 0 %}
+        {% assign rating_sum = 0 %}
+        {% for review in site.reviews %}
+          {% unless review.path contains 'example-review' %}
+            {% assign title_match = false %}
+            {% for match_title in book.match_titles %}
+              {% if review.book_title == match_title %}
+                {% assign title_match = true %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            {% if title_match %}
+              {% assign review_count = review_count | plus: 1 %}
+              {% if review.rating %}
+                {% assign rating_sum = rating_sum | plus: review.rating %}
+              {% endif %}
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+        {% if review_count > 0 %}
+          {% assign rating_tenths = rating_sum | times: 10 | divided_by: review_count %}
+          {% assign rating_whole = rating_tenths | divided_by: 10 %}
+          {% assign rating_frac = rating_tenths | modulo: 10 %}
+          {% assign full_stars = rating_whole %}
+          {% assign has_half_star = false %}
+          {% if rating_frac >= 5 %}
+            {% assign has_half_star = true %}
+          {% endif %}
+          {% if rating_frac < 5 and rating_frac > 0 %}
+            {% assign full_stars = full_stars | plus: 1 %}
+          {% endif %}
+          {% if full_stars > 5 %}
+            {% assign full_stars = 5 %}
+          {% endif %}
+          {% assign preview_path = book.preview | prepend: '/assets/img/publication_preview/' | relative_url %}
+          <article class="publication-reviews-carousel-card">
+            <a class="publication-reviews-carousel-cover" href="{{ '/reviews/' | relative_url }}" aria-label="{{ book.title }} reviews">
+              <img src="{{ preview_path }}" alt="{{ book.title }} cover" loading="lazy" height="288">
+            </a>
+            <div class="publication-reviews-carousel-rating">
+              <span class="publication-reviews-carousel-score" aria-hidden="true">
+                {{- rating_whole -}}
+                .
+                {%- if rating_frac == 0 -%}0{%- else -%}{{ rating_frac }}{%- endif -%}
+              </span>
+              {% assign half_star_index = full_stars | plus: 1 %}
+              <span class="publication-reviews-carousel-stars" aria-label="{{ rating_whole }}.{% if rating_frac == 0 %}0{% else %}{{ rating_frac }}{% endif %} out of 5 stars">
+                {% for i in (1..5) %}
+                  {% if i <= full_stars %}
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  {% elsif has_half_star and i == half_star_index %}
+                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                  {% else %}
+                    <i class="fa-regular fa-star" aria-hidden="true"></i>
+                  {% endif %}
+                {% endfor %}
+              </span>
+              <a class="publication-reviews-carousel-count" href="{{ '/reviews/' | relative_url }}">{{ review_count }}</a>
+            </div>
+            {% if book.format %}
+              <p class="publication-reviews-carousel-format">{{ book.format }}</p>
+            {% endif %}
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

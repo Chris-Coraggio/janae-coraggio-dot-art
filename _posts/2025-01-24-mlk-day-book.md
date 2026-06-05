@@ -2,7 +2,7 @@
 layout: post
 title: "MLK Day Reflections"
 date: 2025-01-24 10:00:00
-description: 'This week, I used the book "Martin Rising" by Andrea Davis Pinkney & Brian Pinkney. We reflected on community, connection, and unity through art.'
+description: A book that explores community, connection, and finding a sense of unity
 tags:
   - books
 thumbnail: /assets/img/mlk.jpg
