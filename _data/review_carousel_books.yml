@@ -1,20 +1,58 @@
 # Books shown in the publications page review carousel.
 # match_titles: review.book_title values grouped under this publication.
+# amazon_asin: product ID from Amazon URL (dp/{asin}); matches scripts/scrape_amazon_reviews.py
 - title: The Happy Field
   match_titles:
     - The Happy Field
   preview: happy-field.jpg
   format: Picture Book
+  amazon_asin: "0578670291"
 
-- title: "Coloring God's Love for Me"
+- title: "Coloring God's Love for Me: 100 Devotions to Inspire Young Hearts"
   match_titles:
-    - "Coloring God's Love for Me"
+    - "Coloring God's Love for Me: 100 Devotions to Inspire Young Hearts"
   preview: coloring.jpg
   format: Paperback
+  amazon_asin: "1400236347"
 
-- title: To My Falling Leaves
+- title: "To My Falling Leaves: the Story of Autumn"
   match_titles:
-    - To My Falling Leaves
-    - To My Fallings Leaves
+    - "To My Falling Leaves: the Story of Autumn"
   preview: leaves.jpg
   format: Picture Book
+  amazon_asin: "0692604693"
+
+- title: The Space Between Us
+  match_titles:
+    - The Space Between Us
+  preview: space.jpg
+  format: Paperback
+  amazon_asin: "1069460605"
+
+- title: "Sitting with My Lions: Being Brave Like Daniel in the Lion's Den"
+  match_titles:
+    - "Sitting with My Lions: Being Brave Like Daniel in the Lion's Den"
+  preview: sitting.jpg
+  format: Picture Book
+  amazon_asin: "057854055X"
+
+- title: "Dear Zoo, I Think My Sister Belongs with You!"
+  match_titles:
+    - "Dear Zoo, I Think My Sister Belongs with You!"
+  preview: zoo.jpg
+  format: Paperback
+  amazon_asin: "0578914743"
+
+- title: Walking with My Elephant
+  match_titles:
+    - Walking with My Elephant
+  preview: walking.jpg
+  format: Picture Book
+  amazon_asin: "0578920557"
+
+- title: "Whispers of the Heart: Listening to Your Heart Changes Your Life"
+  match_titles:
+    - "Whispers of the Heart: Listening to Your Heart Changes Your Life"
+  preview: whispers.jpg
+  format: Paperback
+  amazon_asin: "1952721172"

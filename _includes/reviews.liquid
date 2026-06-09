@@ -1,41 +1,184 @@
-<div class="review-item mb-4 pb-4 border-bottom">
-  <div class="review-header mb-2">
-    <div class="reviewer-info d-flex align-items-center mb-2">
-      <strong class="reviewer-name mr-2">{{ review.reviewer_name }}</strong>
-      {% if review.verified_purchase %}
-        <span class="badge badge-success mr-2">Verified Purchase</span>
-      {% endif %}
-      {% if review.rating %}
-        <div class="rating mr-2">
-          {% assign rating = review.rating | plus: 0 %}
-          {% for i in (1..5) %}
-            {% if i <= rating %}
-              <i class="fa-solid fa-star text-warning"></i>
-            {% else %}
-              <i class="fa-regular fa-star text-muted"></i>
+<div class="reviews">
+  {% assign carousel_books = site.data.review_carousel_books %}
+  {% assign orphan_titles_str = "" %}
+
+  {% if carousel_books and carousel_books.size > 0 %}
+    {% for book in carousel_books %}
+      {% assign book_reviews = "" | split: "" %}
+      {% assign review_count = 0 %}
+      {% assign rating_sum = 0 %}
+
+      {% for review in site.reviews %}
+        {% unless review.path contains 'example-review' %}
+          {% assign title_match = false %}
+          {% for match_title in book.match_titles %}
+            {% if review.book_title == match_title %}
+              {% assign title_match = true %}
+              {% break %}
             {% endif %}
           {% endfor %}
-        </div>
+          {% if title_match %}
+            {% assign book_reviews = book_reviews | push: review %}
+            {% assign review_count = review_count | plus: 1 %}
+            {% if review.rating %}
+              {% assign rating_sum = rating_sum | plus: review.rating %}
+            {% endif %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+
+      {% if review_count > 0 %}
+        {% assign rating_tenths = rating_sum | times: 10 | divided_by: review_count %}
+        {% assign rating_whole = rating_tenths | divided_by: 10 %}
+        {% assign rating_frac = rating_tenths | modulo: 10 %}
+        {% assign full_stars = rating_whole %}
+        {% assign has_half_star = false %}
+        {% if rating_frac >= 5 %}
+          {% assign has_half_star = true %}
+        {% endif %}
+        {% if rating_frac < 5 and rating_frac > 0 %}
+          {% assign full_stars = full_stars | plus: 1 %}
+        {% endif %}
+        {% if full_stars > 5 %}
+          {% assign full_stars = 5 %}
+        {% endif %}
+        {% assign half_star_index = full_stars | plus: 1 %}
+        {% assign sorted_book_reviews = book_reviews | sort: "rating" | reverse %}
+
+        <details class="reviews-book-group">
+          <summary class="reviews-book-summary">
+            <span class="reviews-book-summary-title">{{ book.title }}</span>
+            <span class="reviews-book-summary-rating">
+              <span class="reviews-book-summary-score" aria-hidden="true">
+                {{- rating_whole -}}
+                .
+                {%- if rating_frac == 0 -%}0{%- else -%}{{ rating_frac }}{%- endif -%}
+              </span>
+              <span class="reviews-book-summary-stars" aria-label="{{ rating_whole }}.{% if rating_frac == 0 %}0{% else %}{{ rating_frac }}{% endif %} out of 5 stars">
+                {% for i in (1..5) %}
+                  {% if i <= full_stars %}
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  {% elsif has_half_star and i == half_star_index %}
+                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                  {% else %}
+                    <i class="fa-regular fa-star" aria-hidden="true"></i>
+                  {% endif %}
+                {% endfor %}
+              </span>
+              <span class="reviews-book-summary-count">{{ review_count }} review{% if review_count != 1 %}s{% endif %}</span>
+            </span>
+            <span class="reviews-book-summary-chevron" aria-hidden="true">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+
+          <div class="reviews-book-reviews">
+            {% for review in sorted_book_reviews %}
+              {% include review_item.liquid %}
+            {% endfor %}
+          </div>
+        </details>
       {% endif %}
-    </div>
-    {% if review.review_title %}
-      <h4 class="review-title mb-1">{{ review.review_title }}</h4>
-    {% endif %}
-    {% if review.book_title %}
-      <p class="text-muted mb-2">
-        <em>Review for: {{ review.book_title }}</em>
-      </p>
-    {% endif %}
-    {% if review.date %}
-      <small class="text-muted">{{ review.date | date: '%B %d, %Y' }}</small>
-    {% endif %}
-  </div>
-  <div class="review-content">
-    {{ review.content | markdownify }}
-  </div>
-  {% if review.helpful_count %}
-    <div class="review-helpful mt-2">
-      <small class="text-muted"> <i class="fa-regular fa-thumbs-up"></i> {{ review.helpful_count }} people found this helpful </small>
-    </div>
+    {% endfor %}
   {% endif %}
+
+  {% for review in site.reviews %}
+    {% unless review.path contains 'example-review' %}
+      {% assign is_matched = false %}
+      {% if carousel_books and carousel_books.size > 0 %}
+        {% for book in carousel_books %}
+          {% for match_title in book.match_titles %}
+            {% if review.book_title == match_title %}
+              {% assign is_matched = true %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if is_matched %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% unless is_matched %}
+        {% assign title_token = review.book_title | append: "|||" %}
+        {% unless orphan_titles_str contains title_token %}
+          {% assign orphan_titles_str = orphan_titles_str | append: title_token %}
+        {% endunless %}
+      {% endunless %}
+    {% endunless %}
+  {% endfor %}
+
+  {% assign orphan_titles = orphan_titles_str | split: "|||" %}
+  {% for orphan_title in orphan_titles %}
+    {% if orphan_title != "" %}
+      {% assign book_reviews = "" | split: "" %}
+      {% assign review_count = 0 %}
+      {% assign rating_sum = 0 %}
+
+      {% for review in site.reviews %}
+        {% unless review.path contains 'example-review' %}
+          {% if review.book_title == orphan_title %}
+            {% assign book_reviews = book_reviews | push: review %}
+            {% assign review_count = review_count | plus: 1 %}
+            {% if review.rating %}
+              {% assign rating_sum = rating_sum | plus: review.rating %}
+            {% endif %}
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+
+      {% if review_count > 0 %}
+        {% assign rating_tenths = rating_sum | times: 10 | divided_by: review_count %}
+        {% assign rating_whole = rating_tenths | divided_by: 10 %}
+        {% assign rating_frac = rating_tenths | modulo: 10 %}
+        {% assign full_stars = rating_whole %}
+        {% assign has_half_star = false %}
+        {% if rating_frac >= 5 %}
+          {% assign has_half_star = true %}
+        {% endif %}
+        {% if rating_frac < 5 and rating_frac > 0 %}
+          {% assign full_stars = full_stars | plus: 1 %}
+        {% endif %}
+        {% if full_stars > 5 %}
+          {% assign full_stars = 5 %}
+        {% endif %}
+        {% assign half_star_index = full_stars | plus: 1 %}
+        {% assign sorted_book_reviews = book_reviews | sort: "rating" | reverse %}
+
+        <details class="reviews-book-group">
+          <summary class="reviews-book-summary">
+            <span class="reviews-book-summary-title">{{ orphan_title }}</span>
+            <span class="reviews-book-summary-rating">
+              <span class="reviews-book-summary-score" aria-hidden="true">
+                {{- rating_whole -}}
+                .
+                {%- if rating_frac == 0 -%}0{%- else -%}{{ rating_frac }}{%- endif -%}
+              </span>
+              <span class="reviews-book-summary-stars" aria-label="{{ rating_whole }}.{% if rating_frac == 0 %}0{% else %}{{ rating_frac }}{% endif %} out of 5 stars">
+                {% for i in (1..5) %}
+                  {% if i <= full_stars %}
+                    <i class="fa-solid fa-star" aria-hidden="true"></i>
+                  {% elsif has_half_star and i == half_star_index %}
+                    <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+                  {% else %}
+                    <i class="fa-regular fa-star" aria-hidden="true"></i>
+                  {% endif %}
+                {% endfor %}
+              </span>
+              <span class="reviews-book-summary-count">{{ review_count }} review{% if review_count != 1 %}s{% endif %}</span>
+            </span>
+            <span class="reviews-book-summary-chevron" aria-hidden="true">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+
+          <div class="reviews-book-reviews">
+            {% for review in sorted_book_reviews %}
+              {% include review_item.liquid %}
+            {% endfor %}
+          </div>
+        </details>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 </div>

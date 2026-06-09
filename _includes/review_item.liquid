@@ -1,0 +1,54 @@
+<div class="review-item amazon-review">
+  <div class="amazon-review-header">
+    <div class="amazon-reviewer">
+      <span class="amazon-reviewer-avatar" aria-hidden="true">
+        <i class="fa-solid fa-user"></i>
+      </span>
+      <span class="amazon-reviewer-name">{{ review.reviewer_name }}</span>
+    </div>
+
+    <div class="amazon-review-heading">
+      {% if review.rating %}
+        <span class="amazon-review-stars" aria-label="{{ review.rating }} out of 5 stars">
+          {% assign rating = review.rating | plus: 0 %}
+          {% for i in (1..5) %}
+            {% if i <= rating %}
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            {% else %}
+              <i class="fa-regular fa-star" aria-hidden="true"></i>
+            {% endif %}
+          {% endfor %}
+        </span>
+      {% endif %}
+      {% if review.review_title %}
+        <strong class="amazon-review-title">{{ review.review_title }}</strong>
+      {% endif %}
+    </div>
+
+    {% if review.country and review.date %}
+      <p class="amazon-review-meta">Reviewed in {{ review.country }} on {{ review.date | date: '%B %-d, %Y' }}</p>
+    {% elsif review.date %}
+      <p class="amazon-review-meta">Reviewed on {{ review.date | date: '%B %-d, %Y' }}</p>
+    {% endif %}
+
+    {% if review.format or review.verified_purchase %}
+      <p class="amazon-review-format">
+        {% if review.format %}Format: {{ review.format }}{% endif %}
+        {% if review.format and review.verified_purchase %} | {% endif %}
+        {% if review.verified_purchase %}
+          <span class="amazon-verified-purchase">Verified Purchase</span>
+        {% endif %}
+      </p>
+    {% endif %}
+  </div>
+
+  <div class="amazon-review-body">
+    {{ review.content | markdownify }}
+  </div>
+
+  {% if review.review_image %}
+    <div class="amazon-review-image">
+      <img src="{{ review.review_image | relative_url }}" alt="Customer review image">
+    </div>
+  {% endif %}
+</div>

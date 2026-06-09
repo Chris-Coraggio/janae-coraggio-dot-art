@@ -3,7 +3,7 @@ layout: none
 reviewer_name: Earl
 rating: 5
 review_title: Wonderful Encouraging book for all ages.
-book_title: The Happy Field
+book_title: "The Happy Field"
 date: 2020-05-07
 verified_purchase: true
 helpful_count: 0

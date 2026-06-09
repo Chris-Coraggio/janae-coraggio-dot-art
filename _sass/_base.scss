@@ -825,6 +825,191 @@ footer.sticky-bottom {
   }
 }
 
+.reviews {
+  .reviews-book-group {
+    margin-bottom: 1rem;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 4px;
+    background: var(--global-bg-color);
+
+    &[open] {
+      .reviews-book-summary-chevron {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .reviews-book-summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::marker {
+      display: none;
+    }
+  }
+
+  .reviews-book-summary-title {
+    flex: 1 1 12rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--global-text-color);
+    line-height: 1.3;
+  }
+
+  .reviews-book-summary-rating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.2rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.2;
+  }
+
+  .reviews-book-summary-score {
+    font-weight: 600;
+    color: var(--global-text-color);
+  }
+
+  .reviews-book-summary-stars {
+    display: inline-flex;
+    gap: 0.05rem;
+    color: #de7921;
+
+    .fa-star,
+    .fa-star-half-stroke {
+      font-size: 0.8125rem;
+    }
+
+    .fa-regular.fa-star {
+      color: #d5d9d9;
+    }
+  }
+
+  .reviews-book-summary-count {
+    color: #007185;
+    font-weight: 500;
+  }
+
+  .reviews-book-summary-chevron {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--global-text-color-light);
+    font-size: 0.75rem;
+    transition: transform 0.2s ease;
+  }
+
+  .reviews-book-reviews {
+    padding: 0 1.25rem 1rem;
+    border-top: 1px solid var(--global-divider-color);
+  }
+
+  .amazon-review {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .amazon-reviewer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .amazon-reviewer-avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: #e3e6e6;
+    color: #fff;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+  }
+
+  .amazon-reviewer-name {
+    font-size: 0.875rem;
+    color: var(--global-text-color);
+  }
+
+  .amazon-review-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .amazon-review-stars {
+    display: inline-flex;
+    gap: 0.1rem;
+    color: #de7921;
+    font-size: 0.875rem;
+    line-height: 1;
+  }
+
+  .amazon-review-title {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--global-text-color);
+  }
+
+  .amazon-review-meta,
+  .amazon-review-format,
+  .amazon-review-book {
+    margin: 0 0 0.2rem;
+    font-size: 0.8125rem;
+    line-height: 1.4;
+    color: var(--global-text-color-light);
+  }
+
+  .amazon-verified-purchase {
+    color: #c45500;
+    font-weight: 600;
+  }
+
+  .amazon-review-body {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--global-text-color);
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .amazon-review-image {
+    margin-top: 0.75rem;
+
+    img {
+      width: 4.5rem;
+      height: 4.5rem;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid var(--global-divider-color);
+    }
+  }
+}
+
 .publications-page-footer {
   margin-top: 2rem;
   padding-top: 1rem;

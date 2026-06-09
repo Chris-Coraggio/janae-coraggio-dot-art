@@ -38,8 +38,9 @@
             {% assign full_stars = 5 %}
           {% endif %}
           {% assign preview_path = book.preview | prepend: '/assets/img/publication_preview/' | relative_url %}
+          {% assign amazon_url = book.amazon_asin | prepend: 'https://www.amazon.com/dp/' %}
           <article class="publication-reviews-carousel-card">
-            <a class="publication-reviews-carousel-cover" href="{{ '/reviews/' | relative_url }}" aria-label="{{ book.title }} reviews">
+            <a class="publication-reviews-carousel-cover" href="{{ amazon_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ book.title }} on Amazon">
               <img src="{{ preview_path }}" alt="{{ book.title }} cover" loading="lazy" height="288">
             </a>
             <div class="publication-reviews-carousel-rating">
@@ -60,7 +61,7 @@
                   {% endif %}
                 {% endfor %}
               </span>
-              <a class="publication-reviews-carousel-count" href="{{ '/reviews/' | relative_url }}">{{ review_count }}</a>
+              <a class="publication-reviews-carousel-count" href="{{ amazon_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ review_count }} Amazon reviews for {{ book.title }}">{{ review_count }}</a>
             </div>
             {% if book.format %}
               <p class="publication-reviews-carousel-format">{{ book.format }}</p>

@@ -3,7 +3,7 @@ layout: none
 reviewer_name: Gramma to seven
 rating: 5
 review_title: Review from a senior; citizen, that is.
-book_title: The Happy Field
+book_title: "The Happy Field"
 date: 2016-01-21
 verified_purchase: true
 helpful_count: 0

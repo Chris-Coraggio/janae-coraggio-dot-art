@@ -127,6 +127,10 @@ _styles: |
         <li>Immediate feedback</li>
         <li>Workflow advice</li>
         <li>Summarized action steps</li>
+        <li>Roadmap of next steps</li>
+        <li>Book design and formatting advice</li>
+        <li>Art direction guidance</li>
+        <li>Follow-ups</li>
       </ul>
     </div>
   </div>
