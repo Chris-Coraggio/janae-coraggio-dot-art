@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /murals/
-title: Murals
+title: School Murals
 description:
 nav: false
 nav_order: 2

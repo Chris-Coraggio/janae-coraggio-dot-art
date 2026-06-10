@@ -108,7 +108,7 @@ _styles: |
         <span class="book-service-price">Free</span>
       </div>
       <ul>
-        <li>Discuss your idea, receive a quote</li>
+        <li>Discuss your idea, learn best next steps for your project</li>
       </ul>
     </div>
   </div>
@@ -119,18 +119,16 @@ _styles: |
     <div class="book-service-icon" aria-hidden="true"><i class="ti ti-book-2"></i></div>
     <div class="flex-grow-1">
       <div class="book-service-card-heading">
-        <h2 class="book-service-card-title">1-hour book consultation</h2>
+        <h2 class="book-service-card-title">1-hour book consultation, no manuscript needed</h2>
         <span class="book-service-price">$75</span>
       </div>
       <ul>
         <li>Discussion of story in depth, target audience, commercial viability, character development, visual style, marketing, book sizing, and publishing goals</li>
-        <li>Immediate feedback</li>
         <li>Workflow advice</li>
-        <li>Summarized action steps</li>
-        <li>Roadmap of next steps</li>
+        <li>Summarized action steps and roadmap</li>
         <li>Book design and formatting advice</li>
         <li>Art direction guidance</li>
-        <li>Follow-ups</li>
+        <li>Follow-ups through email</li>
       </ul>
     </div>
   </div>
@@ -142,15 +140,12 @@ _styles: |
     <div class="flex-grow-1">
       <div class="book-service-card-heading">
         <h2 class="book-service-card-title">Full Manuscript Review</h2>
-        <span class="book-service-price">$175</span>
+        <span class="book-service-price">$125</span>
       </div>
       <ul>
-        <li>Reading and analysis</li>
-        <li>1 page written feedback</li>
-        <li>Structural editing</li>
-        <li>Formatting advice</li>
+        <li>In-depth reading and analysis</li>
+        <li>2-3 page document of notes, suggestions, and formatting ideas with actionable next steps</li>
         <li>Art direction guidance</li>
-        <li>Roadmap of next steps</li>
         <li>1 hour follow-up call</li>
       </ul>
     </div>

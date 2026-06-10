@@ -10,8 +10,6 @@ dropdown_header_only: true
 children:
   - title: Publications
     permalink: /publications/
-  - title: Videos
-    permalink: /videos/
-  - title: Murals
+  - title: School Murals
     permalink: /murals/
 ---

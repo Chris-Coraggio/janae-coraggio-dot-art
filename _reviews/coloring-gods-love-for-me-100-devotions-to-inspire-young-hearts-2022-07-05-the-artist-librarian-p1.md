@@ -1,0 +1,12 @@
+---
+layout: none
+reviewer_name: "The Artist Librarian"
+rating: 4
+review_title: ""
+book_title: "Coloring God's Love for Me: 100 Devotions to Inspire Young Hearts"
+date: 2022-07-05
+verified_purchase: false
+helpful_count: 0
+---
+
+Coloring God's Love for Me: 100 Devotions to Inspire Young Hearts, is part activity book and devotional that is just right for lower elementary school students in 1st-3rd grade.  There are 100 "promises" for young readers (e.g. "God Calls Me By Name," "I Can Bless Others," "God Lights My Path" to name a few). Each promise contains a short Bible verse or passage, a 3-4 paragraph devotional based on the verse, and a full page coloring sheet, or activity/journal prompt.  I found the devotionals to be age-appropriate, but was slightly disappointed to see the coloring pages were mostly licensed from clip art type websites, which explained the slightly disparate look with some coloring pages having a kawaii look, while others had a more intricate "adult coloring book" vibe, and then there was some word art, along with some traditional coloring book images. However, I think most kids will not care nor notice this like a former art major such as myself.  The majority of the images and graphics for the coloring pages fit the theme of each devotional and I can envision many kids enjoying this book as their first devotional experience (and having fun being creative with the coloring as well).[Disclosure: I received a copy of this book for review purposes through Just Read Tours.]
