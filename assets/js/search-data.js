@@ -16,15 +16,8 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/publications/";
               },
-            },{id: "dropdown-videos",
-              title: "Videos",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/videos/";
-              },
-            },{id: "dropdown-murals",
-              title: "Murals",
+            },{id: "dropdown-school-murals",
+              title: "School Murals",
               description: "",
               section: "Dropdown",
               handler: () => {
@@ -206,6 +199,16 @@ ninja.data = [{
           description: "",
           section: "Reviews",handler: () => {
               window.location.href = "/reviews/jena-massey-coloring-gods-love-2022/";
+            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-03-rachel-devaughn-p1",
+          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 07...',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-03-rachel-devaughn-p1/";
+            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-05-the-artist-librarian-p1",
+          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 07...',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-05-the-artist-librarian-p1/";
             },},{id: "reviews-andrew-coloring-gods-love-2022",
           title: 'Andrew Coloring Gods Love 2022',
           description: "",
@@ -216,6 +219,11 @@ ninja.data = [{
           description: "",
           section: "Reviews",handler: () => {
               window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-22-andrew-p1/";
+            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-23-aryn-the-libraryan-p1",
+          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 07...',
+          description: "",
+          section: "Reviews",handler: () => {
+              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-23-aryn-the-libraryan-p1/";
             },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-08-12-cj-p1",
           title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 08...',
           description: "",
@@ -256,11 +264,11 @@ ninja.data = [{
           description: "",
           section: "Reviews",handler: () => {
               window.location.href = "/reviews/aiya-coloring-gods-love-2024/";
-            },},{id: "reviews-whispers-of-the-heart-2025-02-04-kim-baruffi-p1",
-          title: 'Whispers Of The Heart 2025 02 04 Kim Baruffi P1',
+            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2024-02-04-aiya-p1",
+          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2024 02...',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/whispers-of-the-heart-2025-02-04-kim-baruffi-p1/";
+              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2024-02-04-aiya-p1/";
             },},{id: "reviews-amrita-kaur-space-between-us-2025",
           title: 'Amrita Kaur Space Between Us 2025',
           description: "",
