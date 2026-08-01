@@ -1,0 +1,51 @@
+name: Sync draft to main
+
+on:
+  schedule:
+    - cron: "0 12 * * *"
+      timezone: "America/Los_Angeles"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch remote branches
+        run: git fetch origin draft main
+
+      - name: Check draft exists
+        id: check_draft
+        run: |
+          if git ls-remote --exit-code --heads origin draft; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Merge draft into main
+        if: steps.check_draft.outputs.exists == 'true'
+        run: |
+          git merge --no-ff origin/draft -m "Merge draft into main"
+
+      - name: Push main
+        if: steps.check_draft.outputs.exists == 'true'
+        run: git push origin main
+
+      - name: Delete draft branch
+        if: steps.check_draft.outputs.exists == 'true'
+        run: git push origin --delete draft

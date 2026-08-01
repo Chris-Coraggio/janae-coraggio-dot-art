@@ -1,0 +1,15 @@
+---
+layout: none
+reviewer_name: Vickie Watts
+rating: 5
+review_title: Inspirational and Creative
+book_title: "Coloring God's Love for Me: 100 Devotions to Inspire Young Hearts"
+date: 2022-06-19
+verified_purchase: false
+helpful_count: 1
+---
+
+
+This is a delightful devotional for children and I would classify it for ages 8-12 or so because of the themes in the devotionals and the intricate coloring pages. It is a perfect book to share with your child, read it and discuss it together or it is also useful for the child to work on the devotionals and coloring pages alone. The topics are extremely pertinent for children, including things about giving God your burdens (with a suitcase at the visual aid) and going on an adventure with God as well as believing His promises and trusting Him. There are so many various topics that the book is not only useful but also applicable to various age groups and both genders. The writing is clear and precise, on age level for the ages I mentioned previously and relatable to children. The Scriptures used are practical and worth using as memory verses for the child. Parents will want to snap up this book to encourage creativity as well as a daily walk with God through a devotional made just for the children in their lives. The illustrations are amusing and appropriate for children. I enjoyed the sample of the book that was provided and look forward to receiving a hard copy. I have three or four grandchildren in mind who would enjoy this book and delving into God’s Word in a fun way that also allows them to express themslelves. I particularly liked the personal and thoughtful questions in each devotional that encourages the child to dig into their own habits and life and get closer to God.
+Disclaimer
+Disclosure of Material Connection: I received a complimentary copy of this book from Thomas Nelson Publsihers via Netgalley. I was not required to write a positive review. The opinions expressed are my own. I am disclosing this in accordance with the Federal Trade Commission’s 16 CFR, Part 255, “Guides Concerning the Use of Testimonials and Endorsements in Advertising.”

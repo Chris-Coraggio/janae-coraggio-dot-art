@@ -1,23 +1,16 @@
 ---
 layout: page
-title: Workshops
+title: Community-based Art Workshops
+nav_title: Workshops
 permalink: /workshops/
 nav: true
 nav_order: 3
 horizontal: false
 ---
 
-<div style="display:flex; align-items:center; gap:1rem; margin:1rem 0;">
-  <img src="/assets/img/book_to_brush.jpg"
-       alt="Book to Brush logo"
-       width="200"
-       height="200">
-  <h3 style="margin:0;">Book to Brush: Storybook-Inspired Artmaking with Janae</h3>
-</div>
-
 #### What's the psychology behind it?
 
-The workshop begins with a reading of a social-emotional picture book, followed by artmaking for a more integrated and holistic approach to increasing emotional regulation, self-expression, and cognitive functioning. By activating both the left and right hemispheres through reading and drawing, the process promotes mindfulness and a reintegration of these functions as both hemispheres learn to work in tandem. Artmaking has also been proven to enhance quality of life, lower stress, build relaxation skills, assist with self-expression when aphasia is present, and boost overall self-esteem. Here's an [article](https://transformingage.org/blog/transforming-age-through-therapeutic-art/) featuring my process!
+This non-art therapy community-based art workshop begins with a reading of a social-emotional picture book or written work such as a poem, followed by artmaking for a more integrated and holistic approach to increase self-awareness, creative self-expression, and cognitive functioning. By activating both the left and right hemispheres through reading and drawing, the process promotes mindfulness and a reintegration of these functions as both hemispheres learn to work in tandem. Artmaking has also been proven to enhance quality of life, lower stress, build relaxation skills, and boost overall self-esteem. Here’s an [article](https://transformingage.org/blog/transforming-age-through-therapeutic-art/) featuring my process in a senior care center!
 
 #### Who is the facilitator?
 
@@ -40,3 +33,13 @@ The uncertainty of using a picture book in an adult-like setting can seem demean
 #### Disclaimer
 
 Although led by a board certified art therapist, these educationally-based art groups can feel therapeutic in nature, but are not therapy or art therapy. If you or someone you know are searching for a clinician to address clinical mental health needs, please find a local clinician by visiting [Psychology Today](https://www.psychologytoday.com/us) or by finding a registered art therapist in your area at the [American Art Therapy Association Art Therapist Locator](https://arttherapy.org/art-therapist-locator/). The purpose of these community-based workshops are only to promote overall wellbeing and health through creative self-expression and art.
+
+<div style="display:flex; justify-content:center; margin:1rem 0;">
+  <figure>
+    <img src="/assets/img/book_to_brush.jpg"
+         alt="Book to Brush: Storybook-Inspired Artmaking with Janae"
+         width="200"
+         height="200">
+    <figcaption class="caption">Book to Brush: Storybook-Inspired Artmaking with Janae</figcaption>
+  </figure>
+</div>

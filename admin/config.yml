@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: Chris-Coraggio/janae-coraggio-dot-art
-  branch: main # Branch to update (optional; defaults to master)
+  branch: draft # Branch to update (optional; defaults to master)
   base_url: https://auth.janaecoraggio.art
 
 media_folder: "assets/img" # Media files will be stored in the repo under assets/img
