@@ -23,8 +23,8 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/murals/";
               },
-            },{id: "nav-workshops",
-          title: "Workshops",
+            },{id: "nav-community-based-art-workshops",
+          title: "Community-based Art Workshops",
           description: "",
           section: "Navigation",
           handler: () => {
@@ -44,13 +44,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "nav-book-services",
-          title: "Book Services",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/book-services/";
-          },
         },{id: "nav-contact",
           title: "Contact",
           description: "",
@@ -64,231 +57,211 @@ ninja.data = [{
           section: "News",},{id: "news-book-services-and-rates-now-available",
           title: 'Book Services and Rates now available',
           description: "",
-          section: "News",},{id: "reviews-amazon-customer-falling-leaves-2016",
-          title: 'Amazon Customer Falling Leaves 2016',
+          section: "News",},{id: "reviews-falling-amazon-customer-2016-01-02",
+          title: 'Falling Amazon Customer 2016 01 02',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/amazon-customer-falling-leaves-2016/";
-            },},{id: "reviews-to-my-falling-leaves-the-story-of-autumn-2016-01-02-amazon-customer-p1",
-          title: 'To My Falling Leaves The Story Of Autumn 2016 01 02 Amazon Customer...',
+              window.location.href = "/reviews/falling-amazon-customer-2016-01-02/";
+            },},{id: "reviews-falling-cat-mom-2016-01-12",
+          title: 'Falling Cat Mom 2016 01 12',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/to-my-falling-leaves-the-story-of-autumn-2016-01-02-amazon-customer-p1/";
-            },},{id: "reviews-to-my-falling-leaves-the-story-of-autumn-2016-01-12-cat-mom-p1",
-          title: 'To My Falling Leaves The Story Of Autumn 2016 01 12 Cat Mom...',
+              window.location.href = "/reviews/falling-cat-mom-2016-01-12/";
+            },},{id: "reviews-falling-jamie-2016-01-15",
+          title: 'Falling Jamie 2016 01 15',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/to-my-falling-leaves-the-story-of-autumn-2016-01-12-cat-mom-p1/";
-            },},{id: "reviews-to-my-falling-leaves-the-story-of-autumn-2016-01-15-jamie-p1",
-          title: 'To My Falling Leaves The Story Of Autumn 2016 01 15 Jamie P1...',
+              window.location.href = "/reviews/falling-jamie-2016-01-15/";
+            },},{id: "reviews-falling-buyer1-2016-01-19",
+          title: 'Falling Buyer1 2016 01 19',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/to-my-falling-leaves-the-story-of-autumn-2016-01-15-jamie-p1/";
-            },},{id: "reviews-buyer-at-1-happy-field-2016",
-          title: 'Buyer At 1 Happy Field 2016',
+              window.location.href = "/reviews/falling-buyer1-2016-01-19/";
+            },},{id: "reviews-falling-gramma-to-seven-2016-01-21",
+          title: 'Falling Gramma To Seven 2016 01 21',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/buyer-at-1-happy-field-2016/";
-            },},{id: "reviews-to-my-falling-leaves-the-story-of-autumn-2016-01-19-buyer1-p1",
-          title: 'To My Falling Leaves The Story Of Autumn 2016 01 19 Buyer1 P1...',
+              window.location.href = "/reviews/falling-gramma-to-seven-2016-01-21/";
+            },},{id: "reviews-falling-sherie-bergstedt-2016-02-29",
+          title: 'Falling Sherie Bergstedt 2016 02 29',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/to-my-falling-leaves-the-story-of-autumn-2016-01-19-buyer1-p1/";
-            },},{id: "reviews-gramma-to-seven-happy-field-2016",
-          title: 'Gramma To Seven Happy Field 2016',
+              window.location.href = "/reviews/falling-sherie-bergstedt-2016-02-29/";
+            },},{id: "reviews-falling-sd-2016-03-24",
+          title: 'Falling Sd 2016 03 24',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/gramma-to-seven-happy-field-2016/";
-            },},{id: "reviews-to-my-falling-leaves-the-story-of-autumn-2016-01-21-gramma-to-seven-p1",
-          title: 'To My Falling Leaves The Story Of Autumn 2016 01 21 Gramma To...',
+              window.location.href = "/reviews/falling-sd-2016-03-24/";
+            },},{id: "reviews-lions-bryson-2019-07-20",
+          title: 'Lions Bryson 2019 07 20',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/to-my-falling-leaves-the-story-of-autumn-2016-01-21-gramma-to-seven-p1/";
-            },},{id: "reviews-to-my-falling-leaves-the-story-of-autumn-2016-02-29-sherie-bergstedt-p1",
-          title: 'To My Falling Leaves The Story Of Autumn 2016 02 29 Sherie Bergstedt...',
+              window.location.href = "/reviews/lions-bryson-2019-07-20/";
+            },},{id: "reviews-lions-dmiller-2019-07-22",
+          title: 'Lions Dmiller 2019 07 22',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/to-my-falling-leaves-the-story-of-autumn-2016-02-29-sherie-bergstedt-p1/";
-            },},{id: "reviews-to-my-falling-leaves-the-story-of-autumn-2016-03-24-sd-p1",
-          title: 'To My Falling Leaves The Story Of Autumn 2016 03 24 Sd P1...',
+              window.location.href = "/reviews/lions-dmiller-2019-07-22/";
+            },},{id: "reviews-lions-katie-2019-07-24",
+          title: 'Lions Katie 2019 07 24',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/to-my-falling-leaves-the-story-of-autumn-2016-03-24-sd-p1/";
-            },},{id: "reviews-sitting-with-my-lions-being-brave-like-daniel-in-the-lions-den-2019-07-20-bryson-keyes-p1",
-          title: 'Sitting With My Lions Being Brave Like Daniel In The Lions Den 2019...',
+              window.location.href = "/reviews/lions-katie-2019-07-24/";
+            },},{id: "reviews-happy-field-vicky-lopez-2020-04-30",
+          title: 'Happy Field Vicky Lopez 2020 04 30',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/sitting-with-my-lions-being-brave-like-daniel-in-the-lions-den-2019-07-20-bryson-keyes-p1/";
-            },},{id: "reviews-sitting-with-my-lions-being-brave-like-daniel-in-the-lions-den-2019-07-22-d-miller-p1",
-          title: 'Sitting With My Lions Being Brave Like Daniel In The Lions Den 2019...',
+              window.location.href = "/reviews/happy-field-vicky-lopez-2020-04-30/";
+            },},{id: "reviews-happy-field-k-2020-05-02",
+          title: 'Happy Field K 2020 05 02',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/sitting-with-my-lions-being-brave-like-daniel-in-the-lions-den-2019-07-22-d-miller-p1/";
-            },},{id: "reviews-sitting-with-my-lions-being-brave-like-daniel-in-the-lions-den-2019-07-24-katie-kelly-p1",
-          title: 'Sitting With My Lions Being Brave Like Daniel In The Lions Den 2019...',
+              window.location.href = "/reviews/happy-field-k-2020-05-02/";
+            },},{id: "reviews-happy-field-earl-2020-05-07",
+          title: 'Happy Field Earl 2020 05 07',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/sitting-with-my-lions-being-brave-like-daniel-in-the-lions-den-2019-07-24-katie-kelly-p1/";
-            },},{id: "reviews-the-happy-field-2020-04-30-vicky-lopez-p1",
-          title: 'The Happy Field 2020 04 30 Vicky Lopez P1',
+              window.location.href = "/reviews/happy-field-earl-2020-05-07/";
+            },},{id: "reviews-happy-field-amy-w-2020-06-14",
+          title: 'Happy Field Amy W 2020 06 14',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/the-happy-field-2020-04-30-vicky-lopez-p1/";
-            },},{id: "reviews-vicky-lopez-happy-field-2020",
-          title: 'Vicky Lopez Happy Field 2020',
+              window.location.href = "/reviews/happy-field-amy-w-2020-06-14/";
+            },},{id: "reviews-happy-field-beth-2020-07-01",
+          title: 'Happy Field Beth 2020 07 01',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/vicky-lopez-happy-field-2020/";
-            },},{id: "reviews-k-happy-field-2020",
-          title: 'K Happy Field 2020',
+              window.location.href = "/reviews/happy-field-beth-2020-07-01/";
+            },},{id: "reviews-zoo-clear-water-2021-06-28",
+          title: 'Zoo Clear Water 2021 06 28',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/k-happy-field-2020/";
-            },},{id: "reviews-the-happy-field-2020-05-02-k-p1",
-          title: 'The Happy Field 2020 05 02 K P1',
+              window.location.href = "/reviews/zoo-clear-water-2021-06-28/";
+            },},{id: "reviews-coloring-t-and-e-espinoza-2022-06-14",
+          title: 'Coloring T And E Espinoza 2022 06 14',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/the-happy-field-2020-05-02-k-p1/";
-            },},{id: "reviews-earl-happy-field-2020",
-          title: 'Earl Happy Field 2020',
+              window.location.href = "/reviews/coloring-t-and-e-espinoza-2022-06-14/";
+            },},{id: "reviews-coloring-evierm-2022-06-15",
+          title: 'Coloring Evierm 2022 06 15',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/earl-happy-field-2020/";
-            },},{id: "reviews-the-happy-field-2020-05-07-earl-p1",
-          title: 'The Happy Field 2020 05 07 Earl P1',
+              window.location.href = "/reviews/coloring-evierm-2022-06-15/";
+            },},{id: "reviews-coloring-mouttet-menagerie-2022-06-15",
+          title: 'Coloring Mouttet Menagerie 2022 06 15',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/the-happy-field-2020-05-07-earl-p1/";
-            },},{id: "reviews-the-happy-field-2020-06-14-amy-w-p1",
-          title: 'The Happy Field 2020 06 14 Amy W P1',
+              window.location.href = "/reviews/coloring-mouttet-menagerie-2022-06-15/";
+            },},{id: "reviews-coloring-steph-a-2022-06-15",
+          title: 'Coloring Steph A 2022 06 15',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/the-happy-field-2020-06-14-amy-w-p1/";
-            },},{id: "reviews-the-happy-field-2020-07-01-beth-p1",
-          title: 'The Happy Field 2020 07 01 Beth P1',
+              window.location.href = "/reviews/coloring-steph-a-2022-06-15/";
+            },},{id: "reviews-coloring-texmel-2022-06-15",
+          title: 'Coloring Texmel 2022 06 15',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/the-happy-field-2020-07-01-beth-p1/";
-            },},{id: "reviews-dear-zoo-i-think-my-sister-belongs-with-you50-out-of-5-stars650-out-of-5-stars-6-customer-reviewspaperback1395-2021-06-28-clear-water-p1",
-          title: 'Dear Zoo I Think My Sister Belongs With You50 Out Of 5 Stars650...',
+              window.location.href = "/reviews/coloring-texmel-2022-06-15/";
+            },},{id: "reviews-coloring-vickie-watts-2022-06-19",
+          title: 'Coloring Vickie Watts 2022 06 19',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/dear-zoo-i-think-my-sister-belongs-with-you50-out-of-5-stars650-out-of-5-stars-6-customer-reviewspaperback1395-2021-06-28-clear-water-p1/";
-            },},{id: "reviews-walking-with-my-elephant-2021-08-25-bill-keyes-p1",
-          title: 'Walking With My Elephant 2021 08 25 Bill Keyes P1',
+              window.location.href = "/reviews/coloring-vickie-watts-2022-06-19/";
+            },},{id: "reviews-coloring-kim-h-in-ga-2022-06-21",
+          title: 'Coloring Kim H In Ga 2022 06 21',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/walking-with-my-elephant-2021-08-25-bill-keyes-p1/";
-            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-06-15-steph-a-p1",
-          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 06...',
+              window.location.href = "/reviews/coloring-kim-h-in-ga-2022-06-21/";
+            },},{id: "reviews-coloring-g-anderson-2022-06-26",
+          title: 'Coloring G Anderson 2022 06 26',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-06-15-steph-a-p1/";
-            },},{id: "reviews-evierm-coloring-gods-love-2022",
-          title: 'Evierm Coloring Gods Love 2022',
+              window.location.href = "/reviews/coloring-g-anderson-2022-06-26/";
+            },},{id: "reviews-coloring-travelerswife4life-2022-06-29",
+          title: 'Coloring Travelerswife4life 2022 06 29',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/evierm-coloring-gods-love-2022/";
-            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-06-19-vickie-watts-p1",
-          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 06...',
+              window.location.href = "/reviews/coloring-travelerswife4life-2022-06-29/";
+            },},{id: "reviews-coloring-blessedbookish-2022-07-01",
+          title: 'Coloring Blessedbookish 2022 07 01',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-06-19-vickie-watts-p1/";
-            },},{id: "reviews-jena-massey-coloring-gods-love-2022",
-          title: 'Jena Massey Coloring Gods Love 2022',
+              window.location.href = "/reviews/coloring-blessedbookish-2022-07-01/";
+            },},{id: "reviews-coloring-jena-massey-2022-07-01",
+          title: 'Coloring Jena Massey 2022 07 01',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/jena-massey-coloring-gods-love-2022/";
-            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-03-rachel-devaughn-p1",
-          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 07...',
+              window.location.href = "/reviews/coloring-jena-massey-2022-07-01/";
+            },},{id: "reviews-coloring-teaandbooks-2022-07-01",
+          title: 'Coloring Teaandbooks 2022 07 01',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-03-rachel-devaughn-p1/";
-            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-05-the-artist-librarian-p1",
-          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 07...',
+              window.location.href = "/reviews/coloring-teaandbooks-2022-07-01/";
+            },},{id: "reviews-coloring-suzie-waltner-2022-07-02",
+          title: 'Coloring Suzie Waltner 2022 07 02',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-05-the-artist-librarian-p1/";
-            },},{id: "reviews-andrew-coloring-gods-love-2022",
-          title: 'Andrew Coloring Gods Love 2022',
+              window.location.href = "/reviews/coloring-suzie-waltner-2022-07-02/";
+            },},{id: "reviews-coloring-amazon-customer-2022-07-03",
+          title: 'Coloring Amazon Customer 2022 07 03',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/andrew-coloring-gods-love-2022/";
-            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-22-andrew-p1",
-          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 07...',
+              window.location.href = "/reviews/coloring-amazon-customer-2022-07-03/";
+            },},{id: "reviews-coloring-rachel-devaughn-2022-07-03",
+          title: 'Coloring Rachel Devaughn 2022 07 03',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-22-andrew-p1/";
-            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-23-aryn-the-libraryan-p1",
-          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 07...',
+              window.location.href = "/reviews/coloring-rachel-devaughn-2022-07-03/";
+            },},{id: "reviews-coloring-the-artist-librarian-2022-07-05",
+          title: 'Coloring The Artist Librarian 2022 07 05',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-07-23-aryn-the-libraryan-p1/";
-            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-08-12-cj-p1",
-          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 08...',
+              window.location.href = "/reviews/coloring-the-artist-librarian-2022-07-05/";
+            },},{id: "reviews-coloring-andrew-2022-07-22",
+          title: 'Coloring Andrew 2022 07 22',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-08-12-cj-p1/";
-            },},{id: "reviews-amazon-customer-coloring-gods-love-2022",
-          title: 'Amazon Customer Coloring Gods Love 2022',
+              window.location.href = "/reviews/coloring-andrew-2022-07-22/";
+            },},{id: "reviews-coloring-aryn-the-libraryan-2022-07-23",
+          title: 'Coloring Aryn The Libraryan 2022 07 23',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/amazon-customer-coloring-gods-love-2022/";
-            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-08-23-amazon-customer-p1",
-          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 08...',
+              window.location.href = "/reviews/coloring-aryn-the-libraryan-2022-07-23/";
+            },},{id: "reviews-coloring-cj-2022-08-12",
+          title: 'Coloring Cj 2022 08 12',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-08-23-amazon-customer-p1/";
-            },},{id: "reviews-example-review",
-          title: 'Example Review',
+              window.location.href = "/reviews/coloring-cj-2022-08-12/";
+            },},{id: "reviews-coloring-amazon-customer-2022-08-23",
+          title: 'Coloring Amazon Customer 2022 08 23',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/example-review/";
-            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-12-28-kate-cox-p1",
-          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2022 12...',
+              window.location.href = "/reviews/coloring-amazon-customer-2022-08-23/";
+            },},{id: "reviews-coloring-kate-cox-2022-12-28",
+          title: 'Coloring Kate Cox 2022 12 28',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2022-12-28-kate-cox-p1/";
-            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2023-04-05-joy-p1",
-          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2023 04...',
+              window.location.href = "/reviews/coloring-kate-cox-2022-12-28/";
+            },},{id: "reviews-coloring-joy-2023-04-05",
+          title: 'Coloring Joy 2023 04 05',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2023-04-05-joy-p1/";
-            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2023-10-18-dianne-g-p1",
-          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2023 10...',
+              window.location.href = "/reviews/coloring-joy-2023-04-05/";
+            },},{id: "reviews-coloring-dianne-g-2023-10-18",
+          title: 'Coloring Dianne G 2023 10 18',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2023-10-18-dianne-g-p1/";
-            },},{id: "reviews-aiya-coloring-gods-love-2024",
-          title: 'Aiya Coloring Gods Love 2024',
+              window.location.href = "/reviews/coloring-dianne-g-2023-10-18/";
+            },},{id: "reviews-coloring-aiya-2024-02-04",
+          title: 'Coloring Aiya 2024 02 04',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/aiya-coloring-gods-love-2024/";
-            },},{id: "reviews-coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2024-02-04-aiya-p1",
-          title: 'Coloring Gods Love For Me 100 Devotions To Inspire Young Hearts 2024 02...',
+              window.location.href = "/reviews/coloring-aiya-2024-02-04/";
+            },},{id: "reviews-coloring-kindle-customer-2026-07-02",
+          title: 'Coloring Kindle Customer 2026 07 02',
           description: "",
           section: "Reviews",handler: () => {
-              window.location.href = "/reviews/coloring-gods-love-for-me-100-devotions-to-inspire-young-hearts-2024-02-04-aiya-p1/";
-            },},{id: "reviews-amrita-kaur-space-between-us-2025",
-          title: 'Amrita Kaur Space Between Us 2025',
-          description: "",
-          section: "Reviews",handler: () => {
-              window.location.href = "/reviews/amrita-kaur-space-between-us-2025/";
-            },},{id: "reviews-the-space-between-us-2025-09-10-amrita-kaur-p1",
-          title: 'The Space Between Us 2025 09 10 Amrita Kaur P1',
-          description: "",
-          section: "Reviews",handler: () => {
-              window.location.href = "/reviews/the-space-between-us-2025-09-10-amrita-kaur-p1/";
-            },},{id: "reviews-edgar-rojo-space-between-us-2025",
-          title: 'Edgar Rojo Space Between Us 2025',
-          description: "",
-          section: "Reviews",handler: () => {
-              window.location.href = "/reviews/edgar-rojo-space-between-us-2025/";
-            },},{id: "reviews-the-space-between-us-2025-09-16-edgar-rojo-p1",
-          title: 'The Space Between Us 2025 09 16 Edgar Rojo P1',
-          description: "",
-          section: "Reviews",handler: () => {
-              window.location.href = "/reviews/the-space-between-us-2025-09-16-edgar-rojo-p1/";
+              window.location.href = "/reviews/coloring-kindle-customer-2026-07-02/";
             },},{
         id: 'social-email',
         title: 'email',
