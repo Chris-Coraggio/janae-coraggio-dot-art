@@ -6,7 +6,7 @@ nav: true
 nav_order: 9
 ---
 
-I’d love to connect with you! Please reach out below if you’re interested in my therapeutic art workshops, book services, murals, or written work. I’m currently accepting commissions.
+I’d love to connect with you! Please reach out below. I’m currently accepting commissions.
 
 <form action="https://formspree.io/f/mdoqwkbv" method="POST" class="contact-form">
   <div class="form-group">

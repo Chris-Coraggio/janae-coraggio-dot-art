@@ -2,12 +2,12 @@
 layout: about
 title: About
 nav: true
-nav_order: 5
+nav_order: 2
 subtitle: Self-Taught Illustrator and Children's Author
 permalink: /about
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >

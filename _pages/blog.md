@@ -1,9 +1,7 @@
 ---
 layout: default
 permalink: /blog/
-title: Blog
-nav: true
-nav_order: 6
+title: Art Directives
 pagination:
   enabled: true
   collection: posts

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thinking Positive Paper Airplane"
+title: "“After the Fall: How Humpty Dumpty Got Back Up Again” by Dan Santat"
 date: 2025-02-03 10:00:00
 description: "A perfect read for leading an art discussion on fears, confidence, and bravery"
 tags:

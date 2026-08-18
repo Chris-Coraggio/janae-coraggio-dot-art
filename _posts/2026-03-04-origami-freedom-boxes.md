@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Origami Freedom Boxes"
+title: “Henry’s Freedom Box” by Ellen Levine and Kadir Nelson
 date: 2026-03-04 10:00:00
 description: "A conversation on personal values, sacrifice, and perseverance"
 tags:

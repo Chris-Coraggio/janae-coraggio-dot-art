@@ -4,7 +4,7 @@ title: Portfolio
 permalink: /portfolio/
 description: Portfolio navigation heading
 nav: true
-nav_order: 2
+nav_order: 3
 dropdown: true
 dropdown_header_only: true
 children:

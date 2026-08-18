@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MLK Day Reflections"
+title: “Martin Rising” by Andrea Davis Pinkney & Brian Pinkney
 date: 2025-01-24 10:00:00
 description: A book that explores community, connection, and finding a sense of unity
 tags:

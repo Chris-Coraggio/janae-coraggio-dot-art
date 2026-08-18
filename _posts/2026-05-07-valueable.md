@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "VALUEable Art-making!"
+title: “Say Something!” by Peter H. Reynolds
 date: 2026-05-07 10:00:00
 description: Getting in touch with your personal values and what matters most
 tags:

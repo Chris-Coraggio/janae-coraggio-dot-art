@@ -19,7 +19,7 @@ The book we featured this week in my senior community was “Say Something!” b
 
 ### Response Art
 
-The art process following began with exploring a mixed variety of cut-out words (if you need ideas of words, pick some from the book!). Rearrange the words to make an encouraging phrase you want to tell the world or your community (if you don’t see the word you need, use alphabet foam stickers or write it!). If you prefer just picking one word, that works as well. Then, you glue the word or phrase to the center of the paper and make art around it. What additional images, patterns, or colors come to mind when you read this word or phrase?
+The art process includes exploring a mixed variety of cut-out words (if you need ideas of words, pick some from the book!) to rearrange and create a phrase or word you want to tell the world or your community. Glue the word or phrase to the center of your paper and make art around it. What additional images, patterns, or colors come to mind when you read this word or phrase? Think of this like protest art!
 
 ### Process Questions
 
