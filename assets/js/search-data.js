@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "dropdown-publications",
+  },{id: "nav-about",
+          title: "About",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/about";
+          },
+        },{id: "dropdown-publications",
               title: "Publications",
               description: "",
               section: "Dropdown",
@@ -23,28 +30,21 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/murals/";
               },
-            },{id: "nav-community-based-art-workshops",
-          title: "Community-based Art Workshops",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/workshops/";
-          },
-        },{id: "nav-about",
-          title: "About",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/about";
-          },
-        },{id: "nav-blog",
-          title: "Blog",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/blog/";
-          },
-        },{id: "nav-contact",
+            },{id: "dropdown-about-my-workshops",
+              title: "About my Workshops",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/workshops/about/";
+              },
+            },{id: "dropdown-art-directives",
+              title: "Art Directives",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/blog/";
+              },
+            },{id: "nav-contact",
           title: "Contact",
           description: "",
           section: "Navigation",
