@@ -52,37 +52,22 @@ permalink: /
 
   <!-- Mobile Images -->
   <picture class="mobile-only">
-    <img src="/assets/img/home_page/mobile/phone1.png" alt="Home Page 1"
+    <img src="/assets/img/home_page/mobile/Homepagephoneversion1.png" alt="Home Page 1"
          style="width: 100%; height: auto; display: block; margin: 0;"
          loading="eager">
   </picture>
   <picture class="mobile-only">
-    <img src="/assets/img/home_page/mobile/phone2.png" alt="Home Page 2"
+    <img src="/assets/img/home_page/mobile/Homepagephoneversion2.png" alt="Home Page 2"
          style="width: 100%; height: auto; display: block; margin: 0;"
          loading="lazy">
   </picture>
   <picture class="mobile-only">
-    <img src="/assets/img/home_page/mobile/phone3.png" alt="Home Page 3"
+    <img src="/assets/img/home_page/mobile/Homepagephoneversion3.png" alt="Home Page 3"
          style="width: 100%; height: auto; display: block; margin: 0;"
          loading="lazy">
   </picture>
   <picture class="mobile-only">
-    <img src="/assets/img/home_page/mobile/phone4.png" alt="Home Page 4"
-         style="width: 100%; height: auto; display: block; margin: 0;"
-         loading="lazy">
-  </picture>
-  <picture class="mobile-only">
-    <img src="/assets/img/home_page/mobile/phone5.png" alt="Home Page 5"
-         style="width: 100%; height: auto; display: block; margin: 0;"
-         loading="lazy">
-  </picture>
-  <picture class="mobile-only">
-    <img src="/assets/img/home_page/mobile/phone6.png" alt="Home Page 6"
-         style="width: 100%; height: auto; display: block; margin: 0;"
-         loading="lazy">
-  </picture>
-  <picture class="mobile-only">
-    <img src="/assets/img/home_page/mobile/phone7.png" alt="Home Page 7"
+    <img src="/assets/img/home_page/mobile/Homepagephoneversion4.png" alt="Home Page 4"
          style="width: 100%; height: auto; display: block; margin: 0;"
          loading="lazy">
   </picture>
