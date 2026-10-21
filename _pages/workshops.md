@@ -31,12 +31,12 @@ images:
 <div class="workshops-body" markdown="1">
 {% if site.data.sanity.workshops.body_html %}
 {% if site.data.sanity.workshops.headline %}
-**{{ site.data.sanity.workshops.headline }}**
+### {{ site.data.sanity.workshops.headline }}
 {% endif %}
 {{ site.data.sanity.workshops.body_html }}
 {% else %}
 
-**Read a book + make art!**
+### Read a book + make art!
 
 Please reach out if you'd like me to facilitate an art workshop! As an art therapist, I believe the art process can help foster mental, emotional, and spiritual growth.
 

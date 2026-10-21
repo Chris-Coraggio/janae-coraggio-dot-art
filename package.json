@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "fetch:sanity": "node scripts/fetch-sanity.mjs",
-    "seed:sanity": "node scripts/seed-sanity.mjs"
+    "seed:sanity": "node scripts/seed-sanity.mjs",
+    "lint": "prettier . --check",
+    "format": "prettier . --write"
   },
   "dependencies": {
     "@portabletext/to-html": "^2.0.0",
