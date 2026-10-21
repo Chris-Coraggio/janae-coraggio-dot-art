@@ -202,8 +202,6 @@ defaults:
 
 sass:
   style: compressed
-  silence_deprecations:
-    - import
   quiet_deps: true
 
 # -----------------------------------------------------------------------------
