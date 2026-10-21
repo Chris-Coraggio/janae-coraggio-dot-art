@@ -11,3 +11,7 @@ assets/libs/
 node_modules/
 vendor
 .idea
+.env*
+studio/node_modules/
+studio/.sanity/
+studio/dist/

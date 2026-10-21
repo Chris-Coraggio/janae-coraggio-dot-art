@@ -1,0 +1,16 @@
+{
+  "headline": "Murals & Community Art",
+  "body_html": "<p>Please reach out if you&#x27;re interested in commissioning a custom indoor or outdoor mural, interactive community wall, or large-scale installation!</p>",
+  "videos": [
+    {
+      "title": "Mural Video 1",
+      "url": "https://www.youtube.com/watch?v=XTAIVbOXsEI",
+      "embed_url": "https://www.youtube.com/embed/XTAIVbOXsEI"
+    },
+    {
+      "title": "Mural Video 2",
+      "url": "https://www.youtube.com/watch?v=0v-NW3MquYw",
+      "embed_url": "https://www.youtube.com/embed/0v-NW3MquYw"
+    }
+  ]
+}

@@ -23,6 +23,7 @@ $light-purple-color: color.adjust($purple-color, $lightness: 25%);
 $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
+$dark-brown-color: #7e5e3e !default; // darkened from #A67C52 for WCAG AA contrast (4.58:1 on #ebe2cf)
 
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);

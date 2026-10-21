@@ -1,0 +1,17 @@
+[build]
+  # 1. Install Node deps (for fetch script)
+  # 2. Fetch content from Sanity → _data/sanity/
+  # 3. Build Jekyll
+  command = "npm ci && node scripts/fetch-sanity.mjs && bundle exec jekyll build"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV   = "production"
+  RUBY_VERSION = "3.2.0"
+  NODE_VERSION = "20"
+
+# Environment variables needed at build time (set actual values in
+# Netlify → Site settings → Environment variables, NOT here):
+#   SANITY_PROJECT_ID
+#   SANITY_TOKEN
+#   SANITY_DATASET  (optional, defaults to "production")

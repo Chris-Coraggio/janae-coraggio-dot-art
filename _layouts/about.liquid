@@ -28,7 +28,7 @@ layout: default
         {% assign logo_path = page.profile.logo | prepend: 'assets/img/' %}
         <div class="logo" style="flex-shrink: 0;">
           {%
-            include figure.liquid loading="eager" path=logo_path class="img-fluid" sizes="120px" alt="Logo"
+            include figure.liquid loading="eager" path=logo_path class="img-fluid" sizes="144px" alt="Logo"
             cache_bust=true
           %}
         </div>
@@ -71,23 +71,36 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix">
+      {%- if site.data.sanity.about.bio_html -%}
+        {{ site.data.sanity.about.bio_html }}
+      {%- else -%}
+        {{ content }}
+      {%- endif -%}
+    </div>
 
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Works</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
+    <!-- Features Card -->
+    <div class="card mt-4 mb-4">
+      <div class="card-body">
+        <h4 class="card-title font-weight-bold mb-3">Features</h4>
+        {% if site.data.sanity.about.features_html %}
+          {{ site.data.sanity.about.features_html }}
+        {% else %}
+          <ul class="mb-0">
+            <li>
+              2026 presenter at the American Art Therapy Association (AATA) Annual Conference on &ldquo;Bibliotherapy and Art Therapy: The Power of
+              Picture Books Across All Ages&rdquo;
+            </li>
+            <li>
+              Concept Artist for a
+              <a href="https://www.marlerblog.com/case-news/colonel-colon-and-his-league-of-fecal-fighters/" target="_blank" rel="noopener noreferrer"
+                >Food Safety Law project</a
+              >
+            </li>
+          </ul>
+        {% endif %}
+      </div>
+    </div>
 
     <!-- Social -->
     {% if page.social %}
@@ -100,6 +113,9 @@ layout: default
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       <div id="newsletter-signup">
+        {% if site.contact_note %}
+          <div class="contact-note" style="text-align: center; margin-bottom: 0.5rem;">{{ site.contact_note }}</div>
+        {% endif %}
         {% include newsletter.liquid center=true %}
       </div>
     {% endif %}

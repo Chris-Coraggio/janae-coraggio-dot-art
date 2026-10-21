@@ -32,14 +32,6 @@ I’d love to connect with you! Please reach out below. I’m currently acceptin
   <button type="submit" class="btn btn-primary">Send Message</button>
 </form>
 
-## Other Ways to Connect
-
-You can also reach out through:
-
-- **Email:** [janaecoraggio@gmail.com](mailto:janaecoraggio@gmail.com)
-- **Instagram:** [@janaedueck.coraggio](https://instagram.com/janaedueck.coraggio)
-- **LinkedIn:** [Profile](https://linkedin.com/in/janaedueck)
-
 <style>
 .contact-form {
   max-width: 600px;

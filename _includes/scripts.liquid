@@ -322,6 +322,11 @@
   <script src="{{ '/assets/js/shortcut-key.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
+{% if page.fslightbox %}
+  <!-- FsLightbox — auto-initializes on [data-fslightbox] anchors -->
+  <script defer src="https://cdn.jsdelivr.net/npm/fslightbox@3.4.1/index.js" crossorigin="anonymous"></script>
+{% endif %}
+
 {% if site.newsletter.enabled %}
   <script defer src="{{ '/assets/js/newsletter.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}

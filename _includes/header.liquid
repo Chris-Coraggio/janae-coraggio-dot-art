@@ -82,6 +82,8 @@
                     {% for child in p.children %}
                       {% if child.title == 'divider' %}
                         <div class="dropdown-divider"></div>
+                      {% elsif child.type == 'section_header' %}
+                        <h6 class="dropdown-header">{{ child.title }}</h6>
                       {% else %}
                         <a
                           class="dropdown-item {% if page.title == child.title %}active{% endif %}"
@@ -132,6 +134,16 @@
             </li>
           {% endif %}
         </ul>
+      </div>
+
+      <!-- Social icons — desktop only -->
+      <div class="d-none d-md-flex align-items-center navbar-header-social">
+        {% include social.liquid %}
+        {% if site.newsletter.enabled %}
+          <a href="{{ '/about#newsletter-signup' | relative_url }}" title="Newsletter" class="navbar-newsletter-icon">
+            <i class="fa-solid fa-envelope-open-text"></i>
+          </a>
+        {% endif %}
       </div>
     </div>
   </nav>

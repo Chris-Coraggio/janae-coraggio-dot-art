@@ -168,6 +168,9 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(100, 80, 50, 0.05);
 
   .card-img {
     width: 100%;
@@ -248,11 +251,32 @@ ul.task-list input[type="checkbox"] {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+
+  @media (max-width: 576px) {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .navbar .dropdown-menu {
   background-color: var(--global-bg-color);
   border: 1px solid var(--global-divider-color);
+  max-height: calc(100vh - 120px);
+  max-height: calc(100dvh - 120px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+
+  // Custom sleek scrollbar
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--global-divider-color);
+    border-radius: 3px;
+  }
 
   a:not(.active) {
     color: var(--global-text-color);
@@ -264,6 +288,24 @@ ul.task-list input[type="checkbox"] {
 
   .dropdown-divider {
     border-top: 1px solid var(--global-divider-color) !important;
+  }
+
+  .dropdown-header {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    padding: 0.5rem 1.25rem 0.25rem;
+  }
+}
+
+// Wider desktop subnav
+@media (min-width: 576px) {
+  .navbar .dropdown-menu {
+    min-width: 24rem; // ~384px for spacious book titles
+    max-width: 28rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 }
 
@@ -295,8 +337,63 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+@media (max-width: 576px) {
+  .navbar-collapse {
+    max-height: calc(100vh - 60px);
+    max-height: calc(100dvh - 60px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 3.5rem;
+  }
+
+  .navbar .nav-item.dropdown-hover {
+    .dropdown-header-only {
+      display: none !important;
+    }
+
+    .dropdown-menu {
+      position: static !important;
+      float: none !important;
+      display: block !important;
+      max-height: none !important;
+      overflow: visible !important;
+      border: none !important;
+      box-shadow: none !important;
+      background-color: transparent !important;
+      padding: 0 0 1rem 0 !important;
+      width: 100% !important;
+      max-width: 100% !important;
+
+      &::after {
+        display: none !important;
+      }
+
+      .dropdown-item {
+        padding: 0.5rem 0.5rem 0.5rem 0;
+        text-align: right;
+        font-size: 0.95rem;
+      }
+
+      .dropdown-header {
+        padding: 0.75rem 0.5rem 0.25rem 0;
+        text-align: right;
+        font-weight: 700;
+        font-size: 0.8rem;
+        opacity: 0.75;
+      }
+
+      .dropdown-divider {
+        margin: 0.5rem 0 0.5rem auto;
+        width: 60%;
+      }
+    }
+  }
+}
+
 .dropdown-item {
   color: var(--global-text-color);
+  white-space: normal;
+  padding: 0.35rem 1.25rem;
 
   &:hover {
     color: var(--global-hover-color);
@@ -367,6 +464,49 @@ ul.task-list input[type="checkbox"] {
           color: var(--global-theme-color);
         }
       }
+    }
+  }
+}
+
+// Header social icons (desktop only — hidden on mobile via d-none d-sm-flex)
+.navbar-header-social {
+  gap: 0.1rem;
+  margin-left: 0.75rem;
+  font-size: 1.2rem;
+
+  a {
+    padding: 0 0.3rem;
+    line-height: 1;
+
+    i::before {
+      color: var(--global-text-color);
+      transition: color 0.2s ease-in-out;
+    }
+
+    &:hover i::before {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// Footer social icons
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+
+  a {
+    padding: 0 0.3rem;
+
+    i::before {
+      color: var(--global-text-color);
+      transition: color 0.2s ease-in-out;
+    }
+
+    &:hover i::before {
+      color: var(--global-theme-color);
     }
   }
 }

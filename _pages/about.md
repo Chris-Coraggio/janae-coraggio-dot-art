@@ -10,21 +10,10 @@ profile:
   align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>ATR-BC #22-487</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+social: false # includes social icons at the bottom of the page
 ---
 
-Hi friend! I’m a children’s book illustrator, author, and <a href="https://atcb.org/what-is-art-therapy/">Board Certified Art Therapist</a> with over 10 collaborative projects, self-published and traditionally published. My most notable book is _Coloring God’s Love for Me: 100 Devotions to Inspire Young Hearts_ published with Tommy Nelson, a Christian Imprint to HarperCollins, in 2022. I hold a masters degree in Marriage and Family Therapy (MFT) and Art Therapy (AT) from Dominican University of California. In addition to working in an assisted living and memory care facility as an art therapist, I continue to write and illustrate picture books. My master's thesis explores the therapeutic value of children's books, and so I strongly believe that these beloved books are more than just stories but can also shape our thoughts and behaviors.
+I’m a children’s book illustrator, author, and board certified art therapist with experience in both clinical and community-based settings. I wrote "Coloring God’s Love for Me: 100 Devotions to Inspire Young Hearts" published by Tommy Nelson, a Christian Imprint to HarperCollins. I hold a masters degree in Marriage and Family Therapy with a specialization in art therapy from Dominican University of California.
+Currently, I'm facilitating community-based art workshops and continue to write and illustrate picture books covering socio-emotional topics. I'm a student in UC San Diego's Children's Illustration certificate program. My master's thesis explores the therapeutic value of children's books and I strongly believe that picture books are more than just stories, but can shape our thoughts and behaviors whether reading them as a child or adult.
+I live with my husband and samoyed rescue dog in the Berkley area where I love to go on hikes, visit good coffee shops, and be involved with my local church community.

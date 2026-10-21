@@ -1,0 +1,23 @@
+{% comment %}
+  Renders the book carousel slider.
+  If Sanity has images for this book, it displays them dynamically.
+  Usage: {% include book_carousel.liquid slug="the-happy-field" %}
+{% endcomment %}
+
+{% assign _book = site.data.sanity.books | where: 'slug', include.slug | first %}
+{% if _book and _book.images and _book.images.size > 0 %}
+  <swiper-container
+    keyboard="true"
+    navigation="true"
+    pagination="true"
+    pagination-clickable="true"
+    loop="true"
+    autoplay-delay="4000"
+    autoplay-pause-on-mouse-enter="true"
+    style="margin-bottom: 2rem;"
+  >
+    {% for img in _book.images %}
+      <swiper-slide><img src="{{ img.url }}" alt="{{ img.alt }}" style="width:100%;max-height:480px;object-fit:contain;"></swiper-slide>
+    {% endfor %}
+  </swiper-container>
+{% endif %}

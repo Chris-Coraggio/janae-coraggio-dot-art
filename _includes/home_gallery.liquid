@@ -1,0 +1,55 @@
+{% comment %}
+  Masonry gallery with FsLightbox.
+  Prefers Sanity CMS images from _data/sanity/gallery.json if present;
+  otherwise falls back to local images from _data/gallery.yml.
+{% endcomment %}
+
+{% assign gallery_items = site.data.sanity.gallery %}
+{% if gallery_items == null or gallery_items.size == 0 %}
+  {% assign gallery_items = site.data.gallery %}
+  {% assign is_sanity = false %}
+{% else %}
+  {% assign is_sanity = true %}
+{% endif %}
+
+<div class="home-gallery grid">
+  <div class="grid-sizer"></div>
+  {% for item in gallery_items %}
+    {% if is_sanity %}
+      {% assign img_url = item.url %}
+    {% else %}
+      {% assign gallery_dir = site.gallery_dir | default: 'gallery' %}
+      {% assign img_url = '/assets/img/' | append: gallery_dir | append: '/' | append: item.slug | relative_url %}
+    {% endif %}
+
+    <div
+      class="grid-item"
+      style="aspect-ratio: 1 / 1;"
+    >
+      <a
+        href="{{ img_url }}"
+        data-fslightbox="gallery"
+        data-type="image"
+        data-caption="{{ item.caption }}"
+        aria-label="{{ item.caption }}"
+      >
+        <img
+          src="{{ img_url }}"
+          alt="{{ item.caption }}"
+          decoding="async"
+          {% if forloop.first %}
+            loading="eager"
+            fetchpriority="high"
+          {% else %}
+            loading="lazy"
+          {% endif %}
+        >
+        {% if item.caption %}
+          <div class="gallery-overlay">
+            <div class="gallery-title">{{ item.caption }}</div>
+          </div>
+        {% endif %}
+      </a>
+    </div>
+  {% endfor %}
+</div>

@@ -6,17 +6,17 @@
   {% if site.impressum_path %}
     <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
   {% endif %}
-  {% if site.newsletter.enabled %}
-    <a href="{{ '/about#newsletter-signup' | relative_url }}">Subscribe to my newsletter!</a>.
-  {% endif %}
-  {% if site.last_updated %}
-    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
-  {% endif %}
 {% endcapture %}
 
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
     <div class="container mt-0">
+      <div class="footer-social">
+        {% include social.liquid -%}
+        {%- if site.newsletter.enabled -%}
+          <a href="{{ '/about#newsletter-signup' | relative_url }}" title="Newsletter"><i class="fa-solid fa-envelope-open-text"></i></a>
+        {%- endif %}
+      </div>
       {{ footer_contents }}
     </div>
   </footer>
@@ -27,6 +27,12 @@
     {% endif %}
 
     <div class="container">
+      <div class="footer-social">
+        {% include social.liquid -%}
+        {%- if site.newsletter.enabled -%}
+          <a href="{{ '/about#newsletter-signup' | relative_url }}" title="Newsletter"><i class="fa-solid fa-envelope-open-text"></i></a>
+        {%- endif %}
+      </div>
       {{ footer_contents }}
     </div>
   </footer>

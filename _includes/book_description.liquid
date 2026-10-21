@@ -1,0 +1,11 @@
+{% comment %}
+  Renders the description for a book, pulling from Sanity if available.
+  Usage: {% include book_description.liquid slug="the-happy-field" %}
+{% endcomment %}
+
+{% assign _book = site.data.sanity.books | where: 'slug', include.slug | first %}
+{% if _book and _book.description_html %}
+  {{ _book.description_html }}
+{% else %}
+  <p><em>Description coming soon.</em></p>
+{% endif %}

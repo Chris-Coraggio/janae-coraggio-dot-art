@@ -1,0 +1,51 @@
+# Gallery image data
+# Curated homepage gallery images (Original aspect ratio versions from assets/img/gallery/)
+
+- slug: "character-2.jpg"
+  caption: "Character Studies"
+  width: 1127
+  height: 1200
+- slug: "character-3.jpg"
+  caption: "Character Studies"
+  width: 1200
+  height: 1000
+- slug: "character-5.jpg"
+  caption: "Character Studies"
+  width: 900
+  height: 1200
+- slug: "character-7.jpg"
+  caption: "Character Studies"
+  width: 1200
+  height: 1000
+- slug: "character-8.jpg"
+  caption: "Character Studies"
+  width: 1200
+  height: 1200
+- slug: "tree-and-hammock.jpg"
+  caption: "Tree and Hammock"
+  width: 1200
+  height: 1100
+- slug: "grocery-1.jpg"
+  caption: "Grocery Store"
+  width: 1200
+  height: 772
+- slug: "grocery-3.jpg"
+  caption: "Grocery Store"
+  width: 1200
+  height: 745
+- slug: "make-art-monday.jpg"
+  caption: "Make Art Monday"
+  width: 1200
+  height: 936
+- slug: "owl-and-elephant.jpg"
+  caption: "Owl and Elephant"
+  width: 1118
+  height: 1200
+- slug: "random-3.jpg"
+  caption: "Artwork"
+  width: 1020
+  height: 1200
+- slug: "wildflower.jpg"
+  caption: "Wildflower"
+  width: 1200
+  height: 614
