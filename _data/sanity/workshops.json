@@ -1,13 +1,13 @@
 {
   "headline": "Read a book + make art!",
-  "body_html": "<p>Please reach out if you’d like me to facilitate an art workshop! As an art therapist, I believe the art process can help foster mental, emotional, and spiritual growth.</p><p>*Disclaimer: These art workshops are not art therapy. If you’re looking for art therapy, please visit the <a href=\"https://arttherapy.org/art-therapist-locator/\" target=\"_blank\" rel=\"noopener noreferrer\">American Art Therapy Association Art Therapist Locator</a> to find a registered art therapist in your area.*</p>",
+  "body_html": "<p>Please reach out if you’d like me to facilitate an art workshop! As an art therapist, I believe the art process can apply what is read in a meaningful way.</p><p>*Disclaimer: These art workshops are not art therapy. If you’re looking for art therapy, please visit the <a href=\"https://arttherapy.org/art-therapist-locator/\" target=\"_blank\" rel=\"noopener noreferrer\">American Art Therapy Association Art Therapist Locator</a> to find a registered art therapist in your area.*</p>",
   "images": [
     {
       "caption": "Workshop",
       "alt": "Workshop",
-      "url": "https://cdn.sanity.io/images/jto96msg/production/87ee1bf0b6e5fa5686a1638dfbcdc17c5bd670ed-699x1200.jpg",
-      "width": 699,
-      "height": 1200
+      "url": "https://cdn.sanity.io/images/jto96msg/production/d4c14d802001a798cf9e181ca74f9a65ba3c75c5-1200x799.jpg",
+      "width": 1200,
+      "height": 799
     },
     {
       "caption": "Workshop",
@@ -26,6 +26,13 @@
     {
       "caption": "Workshop",
       "alt": "Workshop",
+      "url": "https://cdn.sanity.io/images/jto96msg/production/11778622d1f146f795e6ac1eaa28564ded9546c8-937x1200.jpg",
+      "width": 937,
+      "height": 1200
+    },
+    {
+      "caption": "Workshop",
+      "alt": "Workshop",
       "url": "https://cdn.sanity.io/images/jto96msg/production/dba83c79493409395395eeab2375373c932b6672-900x1200.jpg",
       "width": 900,
       "height": 1200
@@ -36,41 +43,6 @@
       "url": "https://cdn.sanity.io/images/jto96msg/production/77ba5df5fa8eb49438bc761d59b561179f8e5aec-1200x900.jpg",
       "width": 1200,
       "height": 900
-    },
-    {
-      "caption": "Workshop",
-      "alt": "Workshop",
-      "url": "https://cdn.sanity.io/images/jto96msg/production/75c3ba58f9daaeda0263fbdf0b0d6c3d4345d3d7-1200x800.jpg",
-      "width": 1200,
-      "height": 800
-    },
-    {
-      "caption": "Workshop",
-      "alt": "Workshop",
-      "url": "https://cdn.sanity.io/images/jto96msg/production/d4c14d802001a798cf9e181ca74f9a65ba3c75c5-1200x799.jpg",
-      "width": 1200,
-      "height": 799
-    },
-    {
-      "caption": "Workshop",
-      "alt": "Workshop",
-      "url": "https://cdn.sanity.io/images/jto96msg/production/2690f3bef5def035f07a3461fb725679ffa67ec0-900x1200.jpg",
-      "width": 900,
-      "height": 1200
-    },
-    {
-      "caption": "Workshop",
-      "alt": "Workshop",
-      "url": "https://cdn.sanity.io/images/jto96msg/production/11778622d1f146f795e6ac1eaa28564ded9546c8-937x1200.jpg",
-      "width": 937,
-      "height": 1200
-    },
-    {
-      "caption": "Workshop",
-      "alt": "Workshop",
-      "url": "https://cdn.sanity.io/images/jto96msg/production/7fd22210761a6e7baa1cde2f41303a4d01f89e21-900x1200.jpg",
-      "width": 900,
-      "height": 1200
     }
   ]
 }
