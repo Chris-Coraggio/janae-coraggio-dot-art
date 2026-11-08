@@ -24,14 +24,6 @@
     "aspectRatio": 0.75
   },
   {
-    "caption": "Ebb and Flow - Digital and Mixed Media",
-    "alt": "Character Studies",
-    "url": "https://cdn.sanity.io/images/jto96msg/production/5ba4c063d6056b5dec96b28fe1c20495ad60c271-1200x1000.jpg",
-    "width": 1200,
-    "height": 1000,
-    "aspectRatio": 1.2
-  },
-  {
     "caption": "Letting Go - Digital and Mixed Media",
     "alt": "Character Studies",
     "url": "https://cdn.sanity.io/images/jto96msg/production/1597bd7acdd92ab92fa8b588af65390878cf52eb-1200x1200.jpg",
@@ -40,28 +32,28 @@
     "aspectRatio": 1
   },
   {
-    "caption": "Wildflower - Digital",
-    "alt": "Wildflower",
-    "url": "https://cdn.sanity.io/images/jto96msg/production/f9676aa79dc817cd9676fb69dc3b6eb1e2fd50bc-1200x614.jpg",
-    "width": 1200,
-    "height": 614,
-    "aspectRatio": 1.9543973941368078
+    "caption": "Flow the Goby Fish -Digital",
+    "alt": "Character Studies",
+    "url": "https://cdn.sanity.io/images/jto96msg/production/29c832874f18fa5b428ac70fffafbb2e2fb95fd7-1127x1200.jpg",
+    "width": 1127,
+    "height": 1200,
+    "aspectRatio": 0.9391666666666667
   },
   {
-    "caption": "World as Fruits and Vegetables - Digital",
-    "alt": "Grocery Store",
-    "url": "https://cdn.sanity.io/images/jto96msg/production/2724c7b198755b448353152a6fd35c3991098565-1200x745.jpg",
-    "width": 1200,
-    "height": 745,
-    "aspectRatio": 1.610738255033557
+    "caption": "Ebb the Pistol Shrimp - Digital ",
+    "alt": "Ebb the Pistol Shrimp - Digital ",
+    "url": "https://cdn.sanity.io/images/jto96msg/production/16e2e90a20700a5ffd692731d987a3a4d78c5f38-1686x1265.jpg",
+    "width": 1686,
+    "height": 1265,
+    "aspectRatio": 1.332806324110672
   },
   {
-    "caption": "Grocery Store - Digital",
-    "alt": "Grocery Store",
-    "url": "https://cdn.sanity.io/images/jto96msg/production/97c0349922470cdf6c8d140eb8b37d819c3fd01a-1200x772.jpg",
+    "caption": "Ebb and Flow - Digital and Mixed Media",
+    "alt": "Character Studies",
+    "url": "https://cdn.sanity.io/images/jto96msg/production/5ba4c063d6056b5dec96b28fe1c20495ad60c271-1200x1000.jpg",
     "width": 1200,
-    "height": 772,
-    "aspectRatio": 1.5544041450777202
+    "height": 1000,
+    "aspectRatio": 1.2
   },
   {
     "caption": "The Crossroads of Life - Digital ",
@@ -80,19 +72,59 @@
     "aspectRatio": 0.9316666666666666
   },
   {
-    "caption": "Flow the Fish -Digital",
-    "alt": "Character Studies",
-    "url": "https://cdn.sanity.io/images/jto96msg/production/29c832874f18fa5b428ac70fffafbb2e2fb95fd7-1127x1200.jpg",
-    "width": 1127,
-    "height": 1200,
-    "aspectRatio": 0.9391666666666667
+    "caption": "Dear Zoo, I Think My Sister Belongs with You! - Digital",
+    "alt": "Dear Zoo, I Think My Sister Belongs with You! - Digital",
+    "url": "https://cdn.sanity.io/images/jto96msg/production/8d9b7b5009336573bb53d56344f1c5bfb81ccb2a-1500x946.jpg",
+    "width": 1500,
+    "height": 946,
+    "aspectRatio": 1.5856236786469344
   },
   {
-    "caption": "Let Your Light Shine - Digital ",
-    "alt": "Let Your Light Shine - Digital ",
-    "url": "https://cdn.sanity.io/images/jto96msg/production/7316f6e3a25161af568e2da124abb304e7f3c355-2542x2522.jpg",
-    "width": 2542,
-    "height": 2522,
-    "aspectRatio": 1.007930214115781
+    "caption": "Fifi the Birthday Grump - Digital",
+    "alt": "Fifi the Birthday Grump - Digital",
+    "url": "https://cdn.sanity.io/images/jto96msg/production/c3d9b584a741ab58efe68743fb7f93863392add1-763x718.jpg",
+    "width": 763,
+    "height": 718,
+    "aspectRatio": 1.0626740947075208
+  },
+  {
+    "caption": "Fireflies - Digital",
+    "alt": "Fireflies - Digital",
+    "url": "https://cdn.sanity.io/images/jto96msg/production/fad169d2b9279ca9674cbefab86758d80f3e7530-2550x2550.jpg",
+    "width": 2550,
+    "height": 2550,
+    "aspectRatio": 1
+  },
+  {
+    "caption": "World as Fruits and Vegetables - Digital",
+    "alt": "Grocery Store",
+    "url": "https://cdn.sanity.io/images/jto96msg/production/2724c7b198755b448353152a6fd35c3991098565-1200x745.jpg",
+    "width": 1200,
+    "height": 745,
+    "aspectRatio": 1.610738255033557
+  },
+  {
+    "caption": "Grocery Store - Digital",
+    "alt": "Grocery Store",
+    "url": "https://cdn.sanity.io/images/jto96msg/production/97c0349922470cdf6c8d140eb8b37d819c3fd01a-1200x772.jpg",
+    "width": 1200,
+    "height": 772,
+    "aspectRatio": 1.5544041450777202
+  },
+  {
+    "caption": "Sitting with My Lions - Digital ",
+    "alt": "Sitting with My Lions - Digital ",
+    "url": "https://cdn.sanity.io/images/jto96msg/production/31d0b279dc7d8a05f44dc00bb1ad438b33f7b642-2500x1037.jpg",
+    "width": 2500,
+    "height": 1037,
+    "aspectRatio": 2.4108003857280615
+  },
+  {
+    "caption": "Sitting with My Lions - Digital ",
+    "alt": "Sitting with My Lions - Digital ",
+    "url": "https://cdn.sanity.io/images/jto96msg/production/8b8cc7301b2744c9f178585e1f996e61704c77f6-2500x1999.jpg",
+    "width": 2500,
+    "height": 1999,
+    "aspectRatio": 1.2506253126563283
   }
 ]

@@ -4,8 +4,10 @@
 {% endcomment %}
 
 {% assign _book = site.data.sanity.books | where: 'slug', include.slug | first %}
-{% if _book and _book.description_html %}
-  {{ _book.description_html }}
-{% else %}
-  <p><em>Description coming soon.</em></p>
-{% endif %}
+<div class="book-description mt-4 mb-5">
+  {% if _book and _book.description_html %}
+    {{ _book.description_html }}
+  {% else %}
+    <p><em>Description coming soon.</em></p>
+  {% endif %}
+</div>

@@ -276,7 +276,6 @@ async function seed() {
         _id: "book-the-happy-field",
         slug: "the-happy-field",
         title: "The Happy Field",
-        category: "picture-book",
         folder: "the-happy-field",
         desc: "Written by Bethany Clemons and illustrated by Janae Coraggio (2020). Available on Amazon.",
       },
@@ -284,7 +283,6 @@ async function seed() {
         _id: "book-dear-zoo",
         slug: "dear-zoo",
         title: "Dear Zoo, I Think My Sister Belongs with You!",
-        category: "picture-book",
         folder: "dear-zoo",
         desc: "Written by Bethany Clemons and illustrated by Janae Coraggio (2021). Available on Amazon.",
       },
@@ -292,7 +290,6 @@ async function seed() {
         _id: "book-fifi-the-birthday-grump",
         slug: "fifi-the-birthday-grump",
         title: "Fifi the Birthday Grump",
-        category: "picture-book",
         folder: "fifi-the-birthday-grump",
         desc: "Written by Nicole Marie and illustrated by Janae Coraggio (2018). Available on Amazon and Barnes & Noble.",
       },
@@ -300,7 +297,6 @@ async function seed() {
         _id: "book-sitting-with-my-lions",
         slug: "sitting-with-my-lions",
         title: "Sitting with My Lions: Being Brave Like Daniel in the Lion's Den",
-        category: "picture-book",
         folder: "sitting-with-my-lions",
         desc: "Written and illustrated by Janae Coraggio (2019). Available on Amazon.",
       },
@@ -308,7 +304,6 @@ async function seed() {
         _id: "book-to-my-falling-leaves",
         slug: "to-my-falling-leaves",
         title: "To My Falling Leaves: The Story of Autumn",
-        category: "picture-book",
         folder: "to-my-falling-leaves",
         desc: "Written and illustrated by Janae Coraggio (2015). Available on Amazon.",
       },
@@ -316,7 +311,6 @@ async function seed() {
         _id: "book-the-space-between-us",
         slug: "the-space-between-us",
         title: "The Space Between Us",
-        category: "middle-grade-ya",
         folder: "the-space-between-us",
         desc: "Written by Sally Chung, Rapinder Kaur, and Jane Kwon; illustrated by Janae Coraggio (2025). Available on Amazon.",
       },
@@ -324,7 +318,6 @@ async function seed() {
         _id: "book-walking-with-my-elephant",
         slug: "walking-with-my-elephant",
         title: "Walking with My Elephant",
-        category: "middle-grade-ya",
         folder: "walking-with-my-elephant",
         desc: "Written by Nicole Marie and illustrated by Janae Coraggio (2021). Available on Amazon.",
       },
@@ -332,7 +325,6 @@ async function seed() {
         _id: "book-the-little-carousel",
         slug: "the-little-carousel",
         title: "The Little Carousel That Could Change the World",
-        category: "middle-grade-ya",
         folder: "the-little-carousel",
         desc: "Illustrated by Janae Coraggio.",
       },
@@ -340,7 +332,6 @@ async function seed() {
         _id: "book-coloring-gods-love",
         slug: "coloring-gods-love",
         title: "Coloring God's Love for Me",
-        category: "devotional",
         folder: "coloring-gods-love",
         multiDesc: [
           "Coloring God’s Love for Me: 100 Devotions to Inspire Young Hearts is published by Tommy Nelson, a Christian imprint of HarperCollins (2022).",
@@ -355,7 +346,12 @@ async function seed() {
       const bookImgPath = path.join("assets/img/books", b.folder);
       console.log(`  Uploading artwork for "${b.title}"...`);
       const bookImages = await uploadFolderImages(bookImgPath, b.title);
-
+      const coverImage = bookImages.length > 0 ? bookImages[0] : null;
+      const interiorImages = (bookImages.length > 1 ? bookImages.slice(1) : []).map((img) => ({
+        _type: "image",
+        asset: img.asset,
+        alt: img.alt,
+      }));
       const descriptionBlocks = b.multiDesc ? b.multiDesc.map((p) => toBlock(p)) : [toBlock(b.desc)];
 
       const bookDoc = {
@@ -363,15 +359,60 @@ async function seed() {
         _type: "book",
         title: b.title,
         slug: { _type: "slug", current: b.slug },
-        category: b.category,
         description: descriptionBlocks,
-        images: bookImages,
+        ...(coverImage && { coverImage }),
+        images: interiorImages,
       };
 
       await client.createOrReplace(bookDoc);
-      console.log(`✓ Seeded "${b.title}" (${bookImages.length} images)`);
+      console.log(`✓ Seeded "${b.title}" (cover + ${interiorImages.length} interior images)`);
     }
   }
+
+  // ── 5. Site Settings (Logos) ────────────────────────────────────────────────
+  console.log("\n📸 Uploading Site Settings logos...");
+  let animatedAsset = null;
+  let staticHeaderAsset = null;
+  let footerAsset = null;
+
+  if (existsSync("assets/img/logo-animated.gif")) {
+    animatedAsset = await uploadImage("assets/img/logo-animated.gif", "Homepage Animated Logo");
+  }
+  if (existsSync("assets/img/logo.jpeg")) {
+    staticHeaderAsset = await uploadImage("assets/img/logo.jpeg", "Header Logo");
+  }
+  if (existsSync("assets/img/footer-logo.png")) {
+    footerAsset = await uploadImage("assets/img/footer-logo.png", "Footer Logo");
+  }
+
+  const settingsDoc = {
+    _id: "siteSettings",
+    _type: "siteSettings",
+    ...(animatedAsset && {
+      headerLogoAnimated: {
+        _type: "image",
+        asset: { _type: "reference", _ref: animatedAsset._id },
+        alt: "Janae Dueck Coraggio",
+      },
+    }),
+    ...(staticHeaderAsset && {
+      headerLogo: {
+        _type: "image",
+        asset: { _type: "reference", _ref: staticHeaderAsset._id },
+        alt: "Janae Dueck Coraggio",
+      },
+    }),
+    ...(footerAsset && {
+      footerLogo: {
+        _type: "image",
+        asset: { _type: "reference", _ref: footerAsset._id },
+        alt: "Janae Dueck Coraggio",
+      },
+    }),
+  };
+
+  await client.createOrReplace(settingsDoc);
+  console.log("✓ Seeded Site Settings logos");
 
   console.log("\n🎉 All content and photo collections have been uploaded to Sanity!");
   console.log("Refresh your Sanity Studio at http://localhost:3333 to see and manage your galleries.");

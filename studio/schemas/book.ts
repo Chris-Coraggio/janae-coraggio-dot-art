@@ -20,17 +20,24 @@ export const book = defineType({
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: "category",
-      title: "Category",
-      type: "string",
-      options: {
-        list: [
-          { title: "Picture Book", value: "picture-book" },
-          { title: "Middle Grade & YA", value: "middle-grade-ya" },
-          { title: "Devotional", value: "devotional" },
-        ],
-        layout: "radio",
-      },
+      name: "coverImage",
+      title: "Title Picture / Cover",
+      type: "image",
+      description:
+        "The main title/cover image displayed on the Books catalog page (/books/). This picture will NOT be duplicated in the interior gallery on this book's detail page.",
+      options: { hotspot: true },
+      fields: [
+        defineField({
+          name: "caption",
+          title: "Caption",
+          type: "string",
+        }),
+        defineField({
+          name: "alt",
+          title: "Alt Text",
+          type: "string",
+        }),
+      ],
     }),
     defineField({
       name: "description",
@@ -62,19 +69,15 @@ export const book = defineType({
     }),
     defineField({
       name: "images",
-      title: "Book Photos / Artwork",
+      title: "Interior Illustrations & Artwork",
       type: "array",
-      description: "Photos displayed in the carousel for this book. Drag and drop to reorder.",
+      description:
+        "Interior book spreads and illustrations displayed vertically on this book's page. (Note: Do NOT re-upload the title picture here; upload it in the 'Title Picture / Cover' field above).",
       of: [
         {
           type: "image",
           options: { hotspot: true },
           fields: [
-            defineField({
-              name: "caption",
-              title: "Caption",
-              type: "string",
-            }),
             defineField({
               name: "alt",
               title: "Alt Text",
@@ -86,14 +89,9 @@ export const book = defineType({
     }),
   ],
   preview: {
-    select: { title: "title", category: "category" },
-    prepare({ title, category }) {
-      const labels: Record<string, string> = {
-        "picture-book": "Picture Book",
-        "middle-grade-ya": "Middle Grade & YA",
-        devotional: "Devotional",
-      };
-      return { title, subtitle: labels[category] ?? category };
+    select: { title: "title", slug: "slug.current", media: "coverImage" },
+    prepare({ title, slug, media }) {
+      return { title, subtitle: slug ? `/books/${slug}/` : "", media };
     },
   },
 });

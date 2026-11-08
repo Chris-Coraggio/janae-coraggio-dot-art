@@ -1,0 +1,14 @@
+{% assign lower_logo = site.data.sanity.settings.footerLogo %}
+{% if lower_logo.url %}
+  {% assign lower_logo_url = lower_logo.url %}
+  {% assign lower_logo_alt = lower_logo.alt | default: 'Janae Dueck Coraggio' %}
+{% else %}
+  {% assign lower_logo_url = '/assets/img/footer-logo.png' | relative_url %}
+  {% assign lower_logo_alt = 'Janae Dueck Coraggio' %}
+{% endif %}
+
+<!-- Pre-footer with lower logo -->
+<div class="site-prefooter-logo-container">
+  <div class="logo-divider"></div>
+  <img src="{{ lower_logo_url }}" alt="{{ lower_logo_alt }}">
+</div>

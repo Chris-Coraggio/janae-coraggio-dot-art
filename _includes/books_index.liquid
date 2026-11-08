@@ -1,0 +1,97 @@
+{% comment %}
+  Books catalog page: renders all books in a single cascading masonry gallery.
+  Images preserve their natural resolution and aspect ratio without category headings.
+{% endcomment %}
+
+{% assign book_slugs = 'the-happy-field,dear-zoo,fifi-the-birthday-grump,sitting-with-my-lions,to-my-falling-leaves,the-space-between-us,walking-with-my-elephant,the-little-carousel,coloring-gods-love'
+  | split: ','
+%}
+
+<div class="book-gallery grid">
+  <div class="grid-sizer"></div>
+  {% for slug in book_slugs %}
+    {% assign _book = site.data.sanity.books | where: 'slug', slug | first %}
+    {% if _book and _book.coverImage and _book.coverImage.url %}
+      {% assign b_title = _book.title %}
+      {% assign b_cover = _book.coverImage.url %}
+    {% elsif _book and _book.images and _book.images.size > 0 %}
+      {% assign b_title = _book.title %}
+      {% assign b_cover = _book.images[0].url %}
+    {% else %}
+      {% case slug %}
+        {% when 'the-happy-field' %}
+          {% assign b_title = 'The Happy Field' %}
+          {% assign b_cover = '/assets/img/books/the-happy-field/page-1.jpg' | relative_url %}
+        {% when 'dear-zoo' %}
+          {% assign b_title = 'Dear Zoo, I Think My Sister Belongs with You' %}
+          {% assign b_cover = '/assets/img/books/dear-zoo/page-1.jpg' | relative_url %}
+        {% when 'fifi-the-birthday-grump' %}
+          {% assign b_title = 'Fifi the Birthday Grump' %}
+          {% assign b_cover = '/assets/img/books/fifi-the-birthday-grump/page-1.jpg' | relative_url %}
+        {% when 'sitting-with-my-lions' %}
+          {% assign b_title = 'Sitting with My Lions' %}
+          {% assign b_cover = '/assets/img/books/sitting-with-my-lions/page-1.jpg' | relative_url %}
+        {% when 'to-my-falling-leaves' %}
+          {% assign b_title = 'To My Falling Leaves' %}
+          {% assign b_cover = 'https://cdn.sanity.io/images/jto96msg/production/c6160b68eaaefa4b3758083038649d0edc4fa8bc-946x1000.jpg' %}
+        {% when 'the-space-between-us' %}
+          {% assign b_title = 'The Space Between Us' %}
+          {% assign b_cover = '/assets/img/books/the-space-between-us/cover.jpg' | relative_url %}
+        {% when 'walking-with-my-elephant' %}
+          {% assign b_title = 'Walking with My Elephant' %}
+          {% assign b_cover = '/assets/img/books/walking-with-my-elephant/pages-1-2.jpg' | relative_url %}
+        {% when 'the-little-carousel' %}
+          {% assign b_title = 'The Little Carousel That Could Change the World' %}
+          {% assign b_cover = '/assets/img/books/the-little-carousel/chapter-1.jpg' | relative_url %}
+        {% when 'coloring-gods-love' %}
+          {% assign b_title = "Coloring God's Love for Me" %}
+          {% assign b_cover = '/assets/img/books/coloring-gods-love/cover.jpg' | relative_url %}
+      {% endcase %}
+    {% endif %}
+    <div class="grid-item">
+      <a
+        href="{{ '/books/' | append: slug | append: '/' | relative_url }}"
+        aria-label="{{ b_title }}"
+        title="{{ b_title }}"
+      >
+        <img
+          src="{{ b_cover }}"
+          alt="{{ b_title }}"
+          decoding="async"
+          {% if forloop.first %}
+            loading="eager"
+          {% else %}
+            loading="lazy"
+          {% endif %}
+        >
+        <div class="gallery-overlay">
+          <div class="gallery-title">{{ b_title }}</div>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+  {% for b in site.data.sanity.books %}
+    {% unless book_slugs contains b.slug %}
+      {% assign dyn_cover = b.coverImage.url | default: b.images[0].url %}
+      {% if dyn_cover %}
+        <div class="grid-item">
+          <a
+            href="{{ '/books/' | append: b.slug | append: '/' | relative_url }}"
+            aria-label="{{ b.title }}"
+            title="{{ b.title }}"
+          >
+            <img
+              src="{{ dyn_cover }}"
+              alt="{{ b.title }}"
+              decoding="async"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <div class="gallery-title">{{ b.title }}</div>
+            </div>
+          </a>
+        </div>
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+</div>

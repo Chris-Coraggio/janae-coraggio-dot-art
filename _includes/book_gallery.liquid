@@ -1,0 +1,121 @@
+{% comment %}
+  Renders the book interior illustrations stacked vertically, one image wide.
+  Supports Sanity CMS data with local asset fallbacks.
+  The title picture (cover) is displayed on the Books catalog page (/books/) and omitted here.
+  Usage: {% include book_gallery.liquid slug="the-happy-field" %}
+{% endcomment %}
+
+{% assign _book = site.data.sanity.books | where: 'slug', include.slug | first %}
+{% if _book and _book.images and _book.images.size > 0 %}
+  {% assign is_sanity = true %}
+  {% if _book.coverImage and _book.coverImage.url %}
+    {% assign gallery_images = _book.images %}
+    {% assign num_images = gallery_images.size %}
+    {% assign skip_first = false %}
+  {% else %}
+    {% assign gallery_images = _book.images %}
+    {% assign num_images = gallery_images.size | minus: 1 %}
+    {% assign skip_first = true %}
+  {% endif %}
+{% else %}
+  {% assign is_sanity = false %}
+  {% case include.slug %}
+    {% when 'coloring-gods-love' %}
+      {% assign fallback_filenames = 'cover.jpg,photo-1.jpg,photo-2.jpg' | split: ',' %}
+    {% when 'dear-zoo' %}
+      {% assign fallback_filenames = 'page-1.jpg,page-2.jpg,page-3.jpg,page-4.jpg,page-5.jpg,page-6.jpg' | split: ',' %}
+    {% when 'fifi-the-birthday-grump' %}
+      {% assign fallback_filenames = 'page-1.jpg,page-2.jpg,page-3.jpg,page-4.jpg,page-5.jpg,page-6.jpg' | split: ',' %}
+    {% when 'sitting-with-my-lions' %}
+      {% assign fallback_filenames = 'page-1.jpg,page-2.jpg,page-3.jpg,page-4.jpg,page-5.jpg,page-6.jpg' | split: ',' %}
+    {% when 'the-happy-field' %}
+      {% assign fallback_filenames = 'page-1.jpg,page-2.jpg,page-3.jpg,page-4.jpg,page-5.jpg,page-6.jpg' | split: ',' %}
+    {% when 'the-little-carousel' %}
+      {% assign fallback_filenames = 'chapter-1.jpg,chapter-5.jpg,chapter-6.jpg,chapter-7.jpg,chapter-12.jpg' | split: ',' %}
+    {% when 'the-space-between-us' %}
+      {% assign fallback_filenames = 'cover.jpg,scene-1.jpg,scene-4.jpg,scene-6.jpg,scene-9.jpg,scene-11.jpg,back-cover.jpg' | split: ',' %}
+    {% when 'to-my-falling-leaves' %}
+      {% assign fallback_filenames = 'cover.jpg' | split: ',' %}
+    {% when 'walking-with-my-elephant' %}
+      {% assign fallback_filenames = 'pages-1-2.jpg,pages-5-6.jpg,pages-9-10.jpg,pages-13-14.jpg,pages-17-18.jpg,pages-23-24.jpg' | split: ',' %}
+    {% else %}
+      {% assign fallback_filenames = '' | split: ',' %}
+  {% endcase %}
+  {% assign num_images = fallback_filenames.size | minus: 1 %}
+  {% assign skip_first = true %}
+{% endif %}
+
+{% if num_images > 0 %}
+  <div class="book-illustrations">
+    {% if is_sanity %}
+      {% if skip_first %}
+        {% for item in gallery_images offset: 1 %}
+          <div class="book-illustration-item">
+            <a
+              href="{{ item.url }}"
+              data-fslightbox="gallery-{{ include.slug }}"
+              data-type="image"
+              aria-label="{{ item.alt | default: _book.title }}"
+            >
+              <img
+                src="{{ item.url }}"
+                alt="{{ item.alt | default: _book.title }}"
+                decoding="async"
+                {% if forloop.first %}
+                  loading="eager"
+                {% else %}
+                  loading="lazy"
+                {% endif %}
+              >
+            </a>
+          </div>
+        {% endfor %}
+      {% else %}
+        {% for item in gallery_images %}
+          <div class="book-illustration-item">
+            <a
+              href="{{ item.url }}"
+              data-fslightbox="gallery-{{ include.slug }}"
+              data-type="image"
+              aria-label="{{ item.alt | default: _book.title }}"
+            >
+              <img
+                src="{{ item.url }}"
+                alt="{{ item.alt | default: _book.title }}"
+                decoding="async"
+                {% if forloop.first %}
+                  loading="eager"
+                {% else %}
+                  loading="lazy"
+                {% endif %}
+              >
+            </a>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% else %}
+      {% for fname in fallback_filenames offset: 1 %}
+        {% assign img_url = '/assets/img/books/' | append: include.slug | append: '/' | append: fname | relative_url %}
+        <div class="book-illustration-item">
+          <a
+            href="{{ img_url }}"
+            data-fslightbox="gallery-{{ include.slug }}"
+            data-type="image"
+            aria-label="{{ page.title | default: 'Book Illustration' }}"
+          >
+            <img
+              src="{{ img_url }}"
+              alt="{{ page.title | default: 'Book Illustration' }}"
+              decoding="async"
+              {% if forloop.first %}
+                loading="eager"
+              {% else %}
+                loading="lazy"
+              {% endif %}
+            >
+          </a>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+{% endif %}

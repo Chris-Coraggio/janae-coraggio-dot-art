@@ -51,7 +51,8 @@ body.sticky-bottom-footer {
   padding: 8px 0;
 
   img {
-    max-width: 240px;
+    width: 90%;
+    max-width: 252px;
     height: auto;
   }
 
@@ -62,7 +63,27 @@ body.sticky-bottom-footer {
   }
 }
 
-.home-gallery {
+// Site Pre-footer Logo
+.site-prefooter-logo-container {
+  text-align: center;
+  padding: 24px 0 16px;
+  background-color: var(--global-bg-color);
+
+  .logo-divider {
+    width: 75vw;
+    margin: 0 auto 24px;
+    border-bottom: 2px solid #d4c5a9;
+  }
+
+  img {
+    width: 90%;
+    max-width: 336px;
+    height: auto;
+  }
+}
+
+.home-gallery,
+.book-gallery {
   width: 100%;
   max-width: 100%;
   margin: 0;
@@ -80,13 +101,11 @@ body.sticky-bottom-footer {
     overflow: hidden;
     border-radius: 4px;
     position: relative;
-    aspect-ratio: 1 / 1;
 
     a {
       display: block;
       position: relative;
       width: 100%;
-      height: 100%;
       overflow: hidden;
       cursor: pointer;
       border-radius: 4px;
@@ -95,9 +114,6 @@ body.sticky-bottom-footer {
     img {
       display: block;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
       transition:
         transform 0.35s ease,
         filter 0.35s ease,
@@ -166,6 +182,76 @@ body.sticky-bottom-footer {
     .grid-sizer,
     .grid-item {
       width: calc(25% - 7.5px);
+    }
+  }
+}
+
+// Homepage maintains 1:1 square tiles
+.home-gallery {
+  .grid-item {
+    aspect-ratio: 1 / 1;
+
+    a {
+      height: 100%;
+    }
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+// Books galleries use authentic cascading Masonry respecting each image's native resolution
+.book-gallery {
+  margin-bottom: 2rem;
+
+  .grid-item {
+    aspect-ratio: auto;
+
+    a {
+      height: auto;
+    }
+
+    img {
+      height: auto;
+      object-fit: unset;
+    }
+  }
+}
+
+// Individual Book Pages - Vertical Stack of Illustrations
+.book-illustrations {
+  width: 100%;
+  margin: 1.5rem 0 2.5rem;
+
+  .book-illustration-item {
+    width: 100%;
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      transition: opacity 0.25s ease;
+
+      &:hover {
+        opacity: 0.95;
+      }
     }
   }
 }

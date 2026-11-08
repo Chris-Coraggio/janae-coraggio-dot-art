@@ -22,36 +22,48 @@
 
     <!-- Logo -->
     <div class="site-logo-container">
-      <img src="{{ '/assets/img/logo.jpeg' | relative_url }}" alt="Logo">
+      {% assign header_logo = site.data.sanity.settings.headerLogo %}
+      {% if header_logo.url %}
+        <img src="{{ header_logo.url }}" alt="{{ header_logo.alt | default: 'Janae Dueck Coraggio' }}">
+      {% else %}
+        <img src="{{ '/assets/img/logo.jpeg' | relative_url }}" alt="Janae Dueck Coraggio">
+      {% endif %}
       <div class="logo-divider"></div>
     </div>
 
     <!-- Content -->
-    <div class="container mt-4" role="main">
-      {% if page.toc and page.toc.sidebar %}
-        {% if page.toc.sidebar == 'right' %}
-          <div class="row">
-            <!-- main content area -->
-            <div class="col-sm-9">{{ content }}</div>
-            <!-- sidebar, which will move to the top on a small screen -->
-            <div class="col-sm-3">
-              <nav id="toc-sidebar" class="sticky-top"></nav>
+    {% if page.full_width %}
+      {{ content }}
+    {% else %}
+      <div class="container mt-4" role="main">
+        {% if page.toc and page.toc.sidebar %}
+          {% if page.toc.sidebar == 'right' %}
+            <div class="row">
+              <!-- main content area -->
+              <div class="col-sm-9">{{ content }}</div>
+              <!-- sidebar, which will move to the top on a small screen -->
+              <div class="col-sm-3">
+                <nav id="toc-sidebar" class="sticky-top"></nav>
+              </div>
             </div>
-          </div>
+          {% else %}
+            <div class="row">
+              <!-- sidebar, which will move to the top on a small screen -->
+              <div class="col-sm-3">
+                <nav id="toc-sidebar" class="sticky-top"></nav>
+              </div>
+              <!-- main content area -->
+              <div class="col-sm-9">{{ content }}</div>
+            </div>
+          {% endif %}
         {% else %}
-          <div class="row">
-            <!-- sidebar, which will move to the top on a small screen -->
-            <div class="col-sm-3">
-              <nav id="toc-sidebar" class="sticky-top"></nav>
-            </div>
-            <!-- main content area -->
-            <div class="col-sm-9">{{ content }}</div>
-          </div>
+          {{ content }}
         {% endif %}
-      {% else %}
-        {{ content }}
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
+
+    <!-- Pre-footer -->
+    {% include prefooter.liquid %}
 
     <!-- Footer -->
     {% include footer.liquid %}

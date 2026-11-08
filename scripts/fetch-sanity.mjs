@@ -98,10 +98,15 @@ const books = await client.fetch(
   `*[_type == "book"] | order(title asc) {
     "slug": slug.current,
     title,
-    category,
     description,
-    images[]{
+    "coverImage": coverImage {
       caption,
+      alt,
+      "url": asset->url,
+      "width": asset->metadata.dimensions.width,
+      "height": asset->metadata.dimensions.height
+    },
+    images[]{
       alt,
       "url": asset->url,
       "width": asset->metadata.dimensions.width,
@@ -110,19 +115,32 @@ const books = await client.fetch(
   }`
 );
 
-const booksOut = books.map((book) => ({
-  slug: book.slug,
-  title: book.title,
-  category: book.category,
-  description_html: portableToHtml(book.description),
-  images: (book.images || []).map((img) => ({
-    caption: img.caption || book.title,
-    alt: img.alt || img.caption || book.title,
-    url: img.url,
-    width: img.width,
-    height: img.height,
-  })),
-}));
+const booksOut = books.map((book) => {
+  const cover = book.coverImage?.url ? book.coverImage : book.images && book.images.length > 0 ? book.images[0] : null;
+
+  const rawInterior = book.coverImage?.url ? book.images || [] : (book.images || []).slice(1);
+
+  return {
+    slug: book.slug,
+    title: book.title,
+    description_html: portableToHtml(book.description),
+    coverImage: cover
+      ? {
+          caption: cover.caption || book.title,
+          alt: cover.alt || cover.caption || book.title,
+          url: cover.url,
+          width: cover.width,
+          height: cover.height,
+        }
+      : null,
+    images: rawInterior.map((img) => ({
+      alt: img.alt || book.title,
+      url: img.url,
+      width: img.width,
+      height: img.height,
+    })),
+  };
+});
 
 writeFileSync("_data/sanity/books.json", JSON.stringify(booksOut, null, 2));
 console.log(`✓ books: ${booksOut.length} document(s)`);
@@ -198,5 +216,62 @@ const muralsOut = murals
 
 writeFileSync("_data/sanity/murals.json", JSON.stringify(muralsOut, null, 2));
 console.log(`✓ murals: ${murals ? `${muralsOut.videos.length} video(s)` : "not yet in Sanity — using fallback"}`);
+
+// ── Site Settings (Header & Footer Logos) ──────────────────────────────────
+const settings = await client.fetch(
+  `*[_type == "siteSettings"][0]{
+    "headerLogoAnimated": headerLogoAnimated{
+      alt,
+      "url": asset->url,
+      "width": asset->metadata.dimensions.width,
+      "height": asset->metadata.dimensions.height,
+      "aspectRatio": asset->metadata.dimensions.aspectRatio
+    },
+    "headerLogo": headerLogo{
+      alt,
+      "url": asset->url,
+      "width": asset->metadata.dimensions.width,
+      "height": asset->metadata.dimensions.height,
+      "aspectRatio": asset->metadata.dimensions.aspectRatio
+    },
+    "footerLogo": footerLogo{
+      alt,
+      "url": asset->url,
+      "width": asset->metadata.dimensions.width,
+      "height": asset->metadata.dimensions.height,
+      "aspectRatio": asset->metadata.dimensions.aspectRatio
+    }
+  }`
+);
+
+const settingsOut = {
+  headerLogoAnimated: settings?.headerLogoAnimated?.url
+    ? {
+        url: settings.headerLogoAnimated.url,
+        alt: settings.headerLogoAnimated.alt || "Janae Dueck Coraggio",
+        width: settings.headerLogoAnimated.width,
+        height: settings.headerLogoAnimated.height,
+      }
+    : null,
+  headerLogo: settings?.headerLogo?.url
+    ? {
+        url: settings.headerLogo.url,
+        alt: settings.headerLogo.alt || "Janae Dueck Coraggio",
+        width: settings.headerLogo.width,
+        height: settings.headerLogo.height,
+      }
+    : null,
+  footerLogo: settings?.footerLogo?.url
+    ? {
+        url: settings.footerLogo.url,
+        alt: settings.footerLogo.alt || "Janae Dueck Coraggio",
+        width: settings.footerLogo.width,
+        height: settings.footerLogo.height,
+      }
+    : null,
+};
+
+writeFileSync("_data/sanity/settings.json", JSON.stringify(settingsOut, null, 2));
+console.log(`✓ siteSettings: ${settings ? "found" : "not yet in Sanity — using fallback"}`);
 
 console.log("\n✅ Sanity fetch complete. Files written to _data/sanity/");

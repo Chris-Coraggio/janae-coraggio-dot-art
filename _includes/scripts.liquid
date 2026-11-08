@@ -311,7 +311,7 @@
   <script src="{{ '/assets/js/shortcut-key.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
-{% if page.fslightbox %}
+{% if page.fslightbox or page.url contains '/books/' %}
   <!-- FsLightbox — auto-initializes on [data-fslightbox] anchors -->
   <script defer src="https://cdn.jsdelivr.net/npm/fslightbox@3.4.1/index.js" crossorigin="anonymous"></script>
 {% endif %}
