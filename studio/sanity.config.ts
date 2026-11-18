@@ -24,6 +24,7 @@ export default defineConfig({
             S.listItem().title("About Page").child(S.document().schemaType("aboutPage").documentId("aboutPage")),
             S.listItem().title("Workshops Page").child(S.document().schemaType("workshopsPage").documentId("workshopsPage")),
             S.listItem().title("Murals Page").child(S.document().schemaType("muralsPage").documentId("muralsPage")),
+            S.listItem().title("Contact Page").child(S.document().schemaType("contactPage").documentId("contactPage")),
             S.listItem().title("Site Settings").icon(CogIcon).child(S.document().schemaType("siteSettings").documentId("siteSettings")),
             S.divider(),
             S.listItem().title("🚀 Deploy to Live Site").icon(RocketIcon).child(S.component(DeployView).title("Deploy to Live Site")),

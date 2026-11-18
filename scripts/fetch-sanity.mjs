@@ -217,6 +217,18 @@ const muralsOut = murals
 writeFileSync("_data/sanity/murals.json", JSON.stringify(muralsOut, null, 2));
 console.log(`✓ murals: ${murals ? `${muralsOut.videos.length} video(s)` : "not yet in Sanity — using fallback"}`);
 
+// ── Contact page ────────────────────────────────────────────────────────────
+const contact = await client.fetch(`*[_type == "contactPage"][0]{ body }`);
+
+const contactOut = contact
+  ? {
+      body_html: portableToHtml(contact.body),
+    }
+  : {};
+
+writeFileSync("_data/sanity/contact.json", JSON.stringify(contactOut, null, 2));
+console.log(`✓ contact: ${contact ? "found" : "not yet in Sanity — using fallback"}`);
+
 // ── Site Settings (Header & Footer Logos) ──────────────────────────────────
 const settings = await client.fetch(
   `*[_type == "siteSettings"][0]{

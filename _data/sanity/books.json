@@ -134,12 +134,6 @@
         "url": "https://cdn.sanity.io/images/jto96msg/production/aa12c0795940223f6380696ad22ea4dd552eb886-1200x750.jpg",
         "width": 1200,
         "height": 750
-      },
-      {
-        "alt": "Fifi the Birthday Grump",
-        "url": "https://cdn.sanity.io/images/jto96msg/production/78fd29ee3b215401c15c9fd38e1f5f308fc99d60-1200x1192.jpg",
-        "width": 1200,
-        "height": 1192
       }
     ]
   },
@@ -289,15 +283,21 @@
       },
       {
         "alt": "The Space Between Us",
+        "url": "https://cdn.sanity.io/images/jto96msg/production/b85e9ae6c67565aad9552bf65db8e031a7bfc8c0-5100x2550.jpg",
+        "width": 5100,
+        "height": 2550
+      },
+      {
+        "alt": "The Space Between Us",
         "url": "https://cdn.sanity.io/images/jto96msg/production/37f5e601b7b4ceaf72e3a8849443aab6f81428c2-1200x1108.jpg",
         "width": 1200,
         "height": 1108
       },
       {
         "alt": "The Space Between Us",
-        "url": "https://cdn.sanity.io/images/jto96msg/production/cf1c40aabae1c161441f802bf530345054cc9bad-1200x600.jpg",
-        "width": 1200,
-        "height": 600
+        "url": "https://cdn.sanity.io/images/jto96msg/production/e6ac09afddfcb9da1ae710210ab6e910daf7f3aa-4951x2487.jpg",
+        "width": 4951,
+        "height": 2487
       },
       {
         "alt": "The Space Between Us",
@@ -307,15 +307,9 @@
       },
       {
         "alt": "The Space Between Us",
-        "url": "https://cdn.sanity.io/images/jto96msg/production/5ff53ed5118e43057f75b3a6b32eddcecc70625b-1200x600.jpg",
-        "width": 1200,
-        "height": 600
-      },
-      {
-        "alt": "The Space Between Us",
-        "url": "https://cdn.sanity.io/images/jto96msg/production/1ee48f80757c0e0eb4ed090576e78675e156e4be-1200x602.jpg",
-        "width": 1200,
-        "height": 602
+        "url": "https://cdn.sanity.io/images/jto96msg/production/9ae02d1f09d62a7c6e8042d6460ad84ea9c29306-5100x2550.jpg",
+        "width": 5100,
+        "height": 2550
       }
     ]
   },

@@ -6,7 +6,12 @@ nav: true
 nav_order: 9
 ---
 
-I’d love to connect with you! Please reach out below. I’m currently accepting commissions.
+{% if site.data.sanity.contact and site.data.sanity.contact.body_html %}
+{{ site.data.sanity.contact.body_html }}
+{% else %}
+
+  <p>I’d love to connect with you! Please reach out below. I’m currently accepting commissions.</p>
+{% endif %}
 
 <form action="https://formspree.io/f/mdoqwkbv" method="POST" class="contact-form">
   <div class="form-group">
