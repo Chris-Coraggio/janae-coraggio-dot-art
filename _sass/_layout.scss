@@ -188,6 +188,12 @@ body.sticky-bottom-footer {
 
 // Homepage maintains 1:1 square tiles
 .home-gallery {
+  margin-top: 2rem;
+
+  @media (max-width: 576px) {
+    margin-top: 1.5rem;
+  }
+
   .grid-item {
     aspect-ratio: 1 / 1;
 
